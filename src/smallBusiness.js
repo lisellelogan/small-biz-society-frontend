@@ -6,5 +6,7 @@ class SmallBusiness {
         this.name = name
         this.price_range = price_range
         this.address = address
+
+        SmallBusiness.small_businesses.push(this)
     }
 }
