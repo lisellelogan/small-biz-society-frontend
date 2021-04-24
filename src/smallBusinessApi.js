@@ -8,9 +8,8 @@ class SmallBusinessApi {
         fetch(this.smallBusinessesURL)
         .then(response => response.json())
         .then(json => {
-            debugger
             json.data.forEach(smallBusiness => {
-                const newBiz = new SmallBusiness({id: smallBusiness.id, name: smallBusiness.name, price_range: smallBusiness.price_range, address: smallBusiness.address})
+                const newBiz = new SmallBusiness({id: smallBusiness.id, ...smallBusiness.attributes})
             });
         })
     }
