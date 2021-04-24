@@ -1,6 +1,6 @@
 class SmallBusiness {
 
-    static small_businesses = []
+    static all = []
 
     constructor({id, name, price_range, address}){
         this.id = id
@@ -8,6 +8,11 @@ class SmallBusiness {
         this.price_range = price_range
         this.address = address
 
-        SmallBusiness.small_businesses.push(this)
+        const li = document.createElement("li")
+
+        SmallBusiness.all.push(this)
+    }
+
+    displayOnDom(){
     }
 }
