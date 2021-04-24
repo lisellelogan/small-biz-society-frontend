@@ -3,11 +3,4 @@
  const addSmallBizItemBtn = document.getElementById('add-small-biz-button')
 
 
-//  SmallBusinessApi.getSmallBusinesses()
-function getSmallBusinesses(){
-  fetch('http://localhost:3000/small_businesses')
-  .then(response => response.json())
-  .then(data => console.log(data));
-}
-
-getSmallBusinesses()
+SmallBusinessApi.getSmallBusinesses()
