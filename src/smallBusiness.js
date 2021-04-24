@@ -14,5 +14,6 @@ class SmallBusiness {
     }
 
     displayOnDom(){
+        this.li.innerText = `${this.name} - Address: ${this.address} - Price Range: ${this.price_range}`
     }
 }
