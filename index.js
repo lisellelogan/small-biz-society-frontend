@@ -1,6 +1,8 @@
  const smallBizList = document.getElementById('small-biz-list')
- const addSmallBizItem = document.getElementById('add-small-biz-item')
- const addSmallBizItemBtn = document.getElementById('add-small-biz-button')
+ const addSmallBiz= document.getElementById('add-small-biz')
+ const addSmallBizBtn = document.getElementById('add-small-biz-button')
 
+
+ 
 
 SmallBusinessApi.getSmallBusinesses()
