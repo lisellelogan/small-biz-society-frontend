@@ -1,0 +1,3 @@
+class SmallBusiness {
+    //add constructor
+}
