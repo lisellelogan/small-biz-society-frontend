@@ -1,3 +1,7 @@
 body {
     background-color: #ffe5d9;
 }
+
+#nav-bar {
+    font-weight: bold;
+}
