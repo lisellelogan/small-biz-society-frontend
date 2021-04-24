@@ -7,7 +7,11 @@ class SmallBusinessApi {
     static getSmallBusinesses(){
         fetch(this.smallBusinessesURL)
         .then(response => response.json())
-        .then(data => console.log(data));
+        .then(json => {
+            json["data"].forEach(smallBusiness => {
+                const newBiz = new SmallBusiness({id: smallBusiness.id, name: smallBusiness.name, price_range: smallBusiness.price_range, address: smallBusiness.address})
+            });
+        })
     }
 
     renderSmallBusinesses(){
