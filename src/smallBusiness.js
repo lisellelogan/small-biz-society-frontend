@@ -8,12 +8,13 @@ class SmallBusiness {
         this.price_range = price_range
         this.address = address
 
-        const li = document.createElement("li")
+        this.li = document.createElement("li")
 
         SmallBusiness.all.push(this)
     }
 
     displayOnDom(){
-        this.li.innerText = `${this.name} - Address: ${this.address} - Price Range: ${this.price_range}`
+        this.li.innerText = `Business Name: ${this.name} - Price Range: ${this.price_range} - Address: ${this.address}`
+        smallBizList.append(this.li)
     }
 }
