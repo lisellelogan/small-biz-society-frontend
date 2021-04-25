@@ -31,7 +31,10 @@ smallBizForm.addEventListener("submit", handleSubmit)
 
 function handleSubmit(e){
   e.preventDefault()
-  console.log("no refresh!")
+  //grab value from input field
+  //add new biz to list
+  //reset the page so form is gone
+  //add button back
 }
 
 SmallBusinessApi.getSmallBusinesses()
