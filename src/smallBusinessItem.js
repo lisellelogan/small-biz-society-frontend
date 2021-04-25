@@ -21,7 +21,7 @@ class SmallBusinessItem {
     }
 
     addToLi(){
-        this.li.innerText = `
+        this.li.innerHTML = `
         <div data-id="${this.id}">
             <span class="small-biz-item-image"><img src="${this.image_url}" alt="${this.name}"></span>
             <strong class="small-biz-item-name">${this.name}</strong>
@@ -30,8 +30,10 @@ class SmallBusinessItem {
             <span class="small-biz-item-product-type">${this.type_of_product}</span>
         </div>
         `
+
+        return this.li
     }
     addSmallBizItemToDom(){
-        
+        smallBizItemList.append(this.addToLi())
     }
 }
