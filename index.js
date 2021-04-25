@@ -9,6 +9,7 @@ addSmallBizBtn.addEventListener('click', handleBizBtnEvent)
 
 function handleBizBtnEvent(e){
   //remove the button when clicked
+  addSmallBizBtn.remove()
   //display form
   //submit form => form disappears
   
