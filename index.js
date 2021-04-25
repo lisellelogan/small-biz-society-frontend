@@ -13,8 +13,11 @@ function handleBizBtnEvent(e){
   //display form
   addSmallBiz.innerHTML = `
   <form id="small-biz-form">
+    <label for="biz-name">Biz Name: </label><br>
     <input type="text" name="name" id="new-biz"></input><br>
+    <label for="biz-price-range">Price Range: </label><br>
     <input type="float" name="price_range"></input><br>
+    <label for="biz-address">Address: </label><br>
     <input type="text" name="address"></input><br>
     <input id="create-small-biz" type="submit" value="Add My Small Biz"></input>
   </form>
