@@ -3,11 +3,12 @@ class SmallBusinessItemApi{
     // call renderSmallBusinesses
     
     static getSmallBusinesses(){
-        fetch('http://localhost:3000/small_business_tems')
+        fetch('http://localhost:3000/small_business_items')
         .then(response => response.json())
         .then(json => {
             json.data.forEach(smallBusinessItem => {
                 const newBizItem = new SmallBusinessItem({id: smallBusinessItem.id, ...smallBusinessItem.attributes})
+                newBizItem.addSmallBizItemToDom()
             });
         })
     }
