@@ -32,6 +32,7 @@ class SmallBusinessItem {
         `
         return this.li
     }
+    
     addSmallBizItemToDom(){
         smallBizItemList.append(this.addToLi())
     }
