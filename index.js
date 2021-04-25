@@ -12,7 +12,14 @@ function handleBizBtnEvent(e){
   addSmallBizBtn.remove()
   //display form
   //submit form => form disappears
-  
+  addSmallBiz.innerHTML = `
+  <form>
+    <input type="text" name="name" id="new-biz"></input><br>
+    <input type="float" name="price_range"></input><br>
+    <input type="text" name="address"></input><br>
+    <input id="create-small-biz" type="submit" value="Add My Small Biz"></input>
+</form>
+  `
 }
 
 SmallBusinessApi.getSmallBusinesses()
