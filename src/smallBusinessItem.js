@@ -20,7 +20,7 @@ class SmallBusinessItem {
         SmallBusinessItem.all.push(this)
     }
 
-    addLi(li){
+    addToLi(){
         this.li.innerText = `
         <div data-id="${this.id}">
             <span class="small-biz-item-image"><img src="${this.image_url}" alt="${this.name}"></span>
