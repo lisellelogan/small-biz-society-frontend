@@ -12,17 +12,17 @@ function handleBizBtnEvent(e){
   addSmallBizBtn.remove()
   //display form
   addSmallBiz.innerHTML = `
-  <form id="add-small-biz-form">
+  <form id="small-biz-form">
     <input type="text" name="name" id="new-biz"></input><br>
     <input type="float" name="price_range"></input><br>
     <input type="text" name="address"></input><br>
     <input id="create-small-biz" type="submit" value="Add My Small Biz"></input>
-</form>
+  </form>
   `
 //add EventListener to form
 //submit form => form disappears
 //prevent the default post request
-
+const smallBizForm = document.getElementById('small-biz-form')
 }
 
 SmallBusinessApi.getSmallBusinesses()
