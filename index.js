@@ -26,8 +26,9 @@ const smallBizForm = document.getElementById('small-biz-form')
 smallBizForm.addEventListener("submit", handleSubmit)
 }
 
-function handleSubmit(){
-  
+function handleSubmit(e){
+  e.preventDefault()
+  console.log("no refresh!")
 }
 
 SmallBusinessApi.getSmallBusinesses()
