@@ -1,4 +1,4 @@
-class SmallBusinessItemApi{
+class SmallBusinessItemApi {
     // getSmallBusinesses => make fetch request to /small_businesses_items
     // call renderSmallBusinesses
     
