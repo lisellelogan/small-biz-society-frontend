@@ -39,6 +39,8 @@ function handleSubmit(e){
   const newBizAddress = document.getElementById('new-biz-address')
   //add new biz to list
   //reset the page so form is gone
+  SmallBusinessItemApi.createSmallBizItem()
+  smallBizForm.reset()
   //add button back
 }
 
