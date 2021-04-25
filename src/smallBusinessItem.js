@@ -19,4 +19,16 @@ class SmallBusinessItem {
 
         SmallBusinessItem.all.push(this)
     }
+
+    addLi(li){
+        this.li.innerText = `
+        <div data-id="${this.id}">
+            <span class="small-biz-item-image"><img src="${this.image_url}" alt="${this.name}"></span>
+            <strong class="small-biz-item-name">${this.name}</strong>
+            <span class="small-biz-item-price">${this.price}</span>
+            <span class="small-biz-item-description">${this.description}</span>
+            <span class="small-biz-item-product-type">${this.type_of_product}</span>
+        </div>
+        `
+    }
 }
