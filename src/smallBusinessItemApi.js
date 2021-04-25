@@ -13,4 +13,8 @@ class SmallBusinessItemApi {
             });
         })
     }
+
+    static createSmallBizItem(){
+        
+    }
 }
