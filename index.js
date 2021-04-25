@@ -42,4 +42,6 @@ function handleSubmit(e){
   //add button back
 }
 
+SmallBusinessItemApi.getSmallBusinessesItems()
+
 SmallBusinessApi.getSmallBusinesses()
