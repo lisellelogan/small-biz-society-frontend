@@ -12,6 +12,11 @@ class SmallBusinessItem {
         this.type_of_product = type_of_product
         this.small_business_id = small_business_id
 
+        //makes it a property of object
+        this.li = document.createElement('li')
+        this.li.id = `small-biz-item-${this.id}`
+        this.li.dataset.id = this.id
+
         SmallBusinessItem.all.push(this)
     }
 }
