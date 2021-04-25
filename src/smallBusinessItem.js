@@ -31,4 +31,7 @@ class SmallBusinessItem {
         </div>
         `
     }
+    addSmallBizItemToDom(){
+        
+    }
 }

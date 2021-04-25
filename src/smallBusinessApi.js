@@ -6,7 +6,7 @@ class SmallBusinessApi {
         .then(json => {
             json.data.forEach(smallBusiness => {
                 const newBiz = new SmallBusiness({id: smallBusiness.id, ...smallBusiness.attributes})
-                newBiz.displayOnDom()
+                newBiz.addSmallBizToDom()
             });
         })
     }

@@ -13,11 +13,11 @@ class SmallBusiness {
         SmallBusiness.all.push(this)
     }
 
-    displayOnDom(){
+    addSmallBizToDom(){
         this.li.innerText = `Business Name: ${this.name} - Price Range: ${this.price_range} - Address: ${this.address}`
         smallBizList.append(this.li)
     }
 
     //make function where you click on add small biz button and form appears
-    
+
 }
