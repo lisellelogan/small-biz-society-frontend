@@ -23,11 +23,11 @@ class SmallBusinessItem {
     addToLi(){
         this.li.innerHTML = `
         <div data-id="${this.id}">
-            <span class="small-biz-item-image"><img src="${this.image_url}" alt="${this.name}"></span>
-            <strong class="small-biz-item-name">${this.name}</strong>
-            <span class="small-biz-item-price">${this.price}</span>
-            <span class="small-biz-item-description">${this.description}</span>
-            <span class="small-biz-item-product-type">${this.type_of_product}</span>
+            <span class="small-biz-item-image"><img src="${this.image_url}" alt="${this.name}"></span><br>
+            <strong class="small-biz-item-name">${this.name}</strong><br>
+            Price: $<span class="small-biz-item-price">${this.price}</span><br>
+            Description: <span class="small-biz-item-description">${this.description}</span><br>
+            Type of Product: <span class="small-biz-item-product-type">${this.type_of_product}</span><br><br>
         </div>
         `
 
