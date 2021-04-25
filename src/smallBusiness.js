@@ -9,13 +9,19 @@ class SmallBusiness {
         this.address = address
 
         this.li = document.createElement("li")
+        this.li.id = `small-biz-${this.id}`
+        this.li.dataset.id = this.id
 
         SmallBusiness.all.push(this)
     }
 
-    addSmallBizToDom(){
+    addBizToLi(){
         this.li.innerText = `Business Name: ${this.name} - Price Range: ${this.price_range} - Address: ${this.address}`
-        smallBizList.append(this.li)
+        return this.li
+    }
+
+    addSmallBizToDom(){
+        smallBizList.append(this.addBizToLi())
     }
 
     //make function where you click on add small biz button and form appears

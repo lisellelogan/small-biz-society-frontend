@@ -30,7 +30,6 @@ class SmallBusinessItem {
             Type of Product: <span class="small-biz-item-product-type">${this.type_of_product}</span><br><br>
         </div>
         `
-
         return this.li
     }
     addSmallBizItemToDom(){
