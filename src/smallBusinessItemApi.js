@@ -2,6 +2,7 @@ class SmallBusinessItemApi {
     // getSmallBusinesses => make fetch request to /small_businesses_items
     // call renderSmallBusinesses
     
+    //use static to call as class method
     static getSmallBusinessesItems(){
         fetch('http://localhost:3000/small_business_items')
         .then(response => response.json())
