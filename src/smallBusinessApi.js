@@ -1,11 +1,7 @@
 class SmallBusinessApi {
-
-    // getSmallBusinesses => make fetch request to /small_businesses
-    // call renderSmallBusinesses
-    static smallBusinessesURL = 'http://localhost:3000/small_businesses'
     
     static getSmallBusinesses(){
-        fetch(this.smallBusinessesURL)
+        fetch('http://localhost:3000/small_businesses')
         .then(response => response.json())
         .then(json => {
             json.data.forEach(smallBusiness => {
