@@ -23,6 +23,11 @@ function handleBizBtnEvent(e){
 //submit form => form disappears
 //prevent the default post request
 const smallBizForm = document.getElementById('small-biz-form')
+smallBizForm.addEventListener("submit", handleSubmit)
+}
+
+function handleSubmit(){
+  
 }
 
 SmallBusinessApi.getSmallBusinesses()
