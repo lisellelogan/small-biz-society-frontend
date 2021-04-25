@@ -11,15 +11,18 @@ function handleBizBtnEvent(e){
   //remove the button when clicked
   addSmallBizBtn.remove()
   //display form
-  //submit form => form disappears
   addSmallBiz.innerHTML = `
-  <form>
+  <form id="add-small-biz-form">
     <input type="text" name="name" id="new-biz"></input><br>
     <input type="float" name="price_range"></input><br>
     <input type="text" name="address"></input><br>
     <input id="create-small-biz" type="submit" value="Add My Small Biz"></input>
 </form>
   `
+//add EventListener to form
+//submit form => form disappears
+//prevent the default post request
+
 }
 
 SmallBusinessApi.getSmallBusinesses()
