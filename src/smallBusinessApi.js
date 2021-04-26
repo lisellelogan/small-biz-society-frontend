@@ -12,8 +12,11 @@ class SmallBusinessApi {
     }
 
     static createSmallBiz(){
-        //do a find or create by to avoid any reoccurring data
-        //if small biz name === input name => find small biz and show them their page
-        //else create small biz
+        debugger
+        const smallBizFormData = {
+            name: bizNameInput.value,
+            price_range: bizPriceRangeInput.value,
+            address: bizAddressInput.value 
+        }
     }
 }
