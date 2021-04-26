@@ -11,7 +11,7 @@ class SmallBusinessApi {
         })
     }
 
-    renderSmallBusinesses(){
-        //create DOM nodes and insert data into nodes to display in the DOM
+    static createSmallBiz(){
+        console.log("yay we made it!")
     }
 }
