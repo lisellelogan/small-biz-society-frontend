@@ -12,7 +12,6 @@ class SmallBusinessApi {
     }
 
     static createSmallBiz(){
-        debugger
         const smallBizFormData = {
             name: bizNameInput.value,
             price_range: bizPriceRangeInput.value,
