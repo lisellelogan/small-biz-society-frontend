@@ -12,6 +12,6 @@ class SmallBusinessApi {
     }
 
     static createSmallBiz(){
-        console.log("yay we made it!")
+        //do a find or create by to avoid any reoccurring data
     }
 }
