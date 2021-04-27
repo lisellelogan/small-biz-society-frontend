@@ -40,4 +40,10 @@ class SmallBusinessItemApi {
             newItem.addSmallBizItemToDom()
         })
     }
+
+    //patch request
+
+    static deleteSmallBizItem(){
+        
+    }
 }
