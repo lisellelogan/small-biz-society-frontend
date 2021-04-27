@@ -30,7 +30,7 @@ function handleItemBtnEvent(){
 function handleItemSubmit(e){
   e.preventDefault()
   smallBizItemForm.style.display = "none"
-  SmallBusinessItemApi.createSmallBiz()
+  // SmallBusinessItemApi.createSmallBiz()
   smallBizItemForm.reset()
   addSmallBizItem.append(addSmallBizItemBtn)
   //grab value from input field
