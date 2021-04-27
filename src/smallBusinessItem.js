@@ -33,13 +33,13 @@ class SmallBusinessItem {
     }
 
     deleteBizItem(){
-        if (window.confirm('Are you sure you want to delete?')){
+        if (window.confirm('Are you sure you want to delete this?')){
             addSmallBizItemBtn.remove()
         }
     }
 
     updateBizItem(){
-        
+
     }
 
     addToLi(){
