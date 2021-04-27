@@ -1,38 +1,38 @@
 const smallBizList = document.getElementById('small-biz-list')
-const addSmallBiz= document.getElementById('add-small-biz')
-const smallBizItemForm = document.getElementById('small-biz-item-form')
-// const addSmallBizBtn = document.getElementById('add-small-biz-button')
+// const addSmallBiz= document.getElementById('add-small-biz')
 const smallBizItemList = document.getElementById('small-biz-item-list')
 const addSmallBizItem = document.getElementById('add-small-biz-item')
-const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
+const smallBizItemForm = document.getElementById('small-biz-item-form')
+// const addSmallBizBtn = document.getElementById('add-small-biz-button')
 const bizItemNameInput = document.getElementById('new-item-name')
 const bizItemPriceInput = document.getElementById('new-item-price')
 const bizItemDescriptionInput = document.getElementById('new-item-description')
 const bizItemTypeInput = document.getElementById('new-item-type-of-product')
 const bizItemImageUrlInput = document.getElementById('new-item-image-url')
+const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
 
-function hideSmallBizForm(){
-  smallBizForm.style.display = "none"
+function hideSmallBizItemForm(){
+  smallBizItemForm.style.display = "none"
 }
 
-hideSmallBizForm()
+hideSmallBizItemForm()
 
-addSmallBizBtn.addEventListener('click', handleBizBtnEvent)
+addSmallBizItemBtn.addEventListener('click', handleItemBtnEvent)
 
-function handleBizBtnEvent(){
-  addSmallBizBtn.remove()
-  smallBizForm.style.display = "block"
+function handleItemBtnEvent(){
+  addSmallBizItemBtn.remove()
+  smallBizItemForm.style.display = "block"
 
-  smallBizForm.addEventListener('submit', handleSmallBizSubmit)
+  smallBizItemForm.addEventListener('submit', handleItemSubmit)
 }
 
-function handleSmallBizSubmit(e){
+function handleItemSubmit(e){
   e.preventDefault()
-  smallBizForm.style.display = "none"
-  SmallBusinessApi.createSmallBiz()
-  smallBizForm.reset()
-  addSmallBiz.append(addSmallBizBtn)
+  smallBizItemForm.style.display = "none"
+  SmallBusinessItemApi.createSmallBiz()
+  smallBizItemForm.reset()
+  addSmallBizItem.append(addSmallBizItemBtn)
   //grab value from input field
   // const bizNameInput = document.getElementById('new-biz-name')
   // const bizPriceRangeInput = document.getElementById('new-biz-price-range')
