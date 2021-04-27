@@ -10,29 +10,5 @@ class SmallBusinessApi {
             });
         })
     }
-
-    static createSmallBiz(){
-        const smallBizFormData = {
-            name: bizNameInput.value,
-            price_range: bizPriceRangeInput.value,
-            address: bizAddressInput.value 
-        }
-
-        const  configObj = {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-            },
-            body: JSON.stringify(smallBizFormData)
-        }
-
-        fetch('http://localhost:3000/small_businesses', configObj)
-        .then(response => response.json())
-        .then(bizData => {
-            const smallBiz = bizData.data
-            const newBiz = new SmallBusiness({id: smallBiz.id, ...smallBiz.attributes})
-            newBiz.addSmallBizToDom()
-        })
-    }
+    
 }
