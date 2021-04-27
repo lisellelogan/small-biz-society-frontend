@@ -36,7 +36,7 @@ class SmallBusinessItemApi {
         .then(response => response.json())
         .then(itemData => {
             const item = itemData.data
-            const newItem = new SmallBusiness({id: item.id, ...item.attributes})
+            const newItem = new SmallBusinessItem({id: item.id, ...item.attributes})
             newItem.addSmallBizItemToDom()
         })
     }
