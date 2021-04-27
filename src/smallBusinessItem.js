@@ -22,7 +22,6 @@ class SmallBusinessItem {
     }
 
     handleClick = (e) => {
-        debugger
         if (e.target.innerText === 'edit this'){
             e.target.innerText = "update"
         } else if (e.target.innerText === 'delete this'){
