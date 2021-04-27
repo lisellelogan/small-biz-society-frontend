@@ -16,7 +16,13 @@ class SmallBusinessItem {
         this.li = document.createElement('li')
         this.li.id = `small-biz-item-${this.id}`
 
+        this.li.addEventListener('click', this.handleClick)
+
         SmallBusinessItem.all.push(this)
+    }
+
+    handleClick = (e) => {
+        
     }
 
     addToLi(){
