@@ -1,13 +1,15 @@
 const smallBizList = document.getElementById('small-biz-list')
 const addSmallBiz= document.getElementById('add-small-biz')
-const smallBizForm = document.getElementById('small-biz-form')
-const addSmallBizBtn = document.getElementById('add-small-biz-button')
+const smallBizItemForm = document.getElementById('small-biz-item-form')
+// const addSmallBizBtn = document.getElementById('add-small-biz-button')
 const smallBizItemList = document.getElementById('small-biz-item-list')
 const addSmallBizItem = document.getElementById('add-small-biz-item')
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
-const bizNameInput = document.getElementById('new-biz-name')
-const bizPriceRangeInput = document.getElementById('new-biz-price-range')
-const bizAddressInput = document.getElementById('new-biz-address')
+const bizItemNameInput = document.getElementById('new-item-name')
+const bizItemPriceInput = document.getElementById('new-item-price')
+const bizItemDescriptionInput = document.getElementById('new-item-description')
+const bizItemTypeInput = document.getElementById('new-item-type-of-product')
+const bizItemImageUrlInput = document.getElementById('new-item-image-url')
 
 
 function hideSmallBizForm(){
