@@ -10,7 +10,6 @@ class SmallBusiness {
 
         this.li = document.createElement("li")
         this.li.id = `small-biz-${this.id}`
-        this.li.dataset.id = this.id
 
 
         SmallBusiness.all.push(this)

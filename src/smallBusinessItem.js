@@ -15,7 +15,6 @@ class SmallBusinessItem {
         //makes it a property of object
         this.li = document.createElement('li')
         this.li.id = `small-biz-item-${this.id}`
-        this.li.dataset.id = this.id
 
         SmallBusinessItem.all.push(this)
     }
