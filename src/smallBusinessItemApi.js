@@ -1,10 +1,12 @@
 class SmallBusinessItemApi {
+
+    static itemsURL = 'http://localhost:3000/small_business_items'
     // getSmallBusinesses => make fetch request to /small_businesses_items
     // call renderSmallBusinesses
     
     //use static to call as class method
     static getSmallBusinessesItems(){
-        fetch('http://localhost:3000/small_business_items')
+        fetch(this.itemsURL)
         .then(response => response.json())
         .then(json => {
             json.data.forEach(smallBusinessItem => {
@@ -32,7 +34,7 @@ class SmallBusinessItemApi {
             body: JSON.stringify(itemFormData)
         }
 
-        fetch('http://localhost:3000/small_business_items', configObj)
+        fetch(this.itemsURL, configObj)
         .then(response => response.json())
         .then(itemData => {
             const item = itemData.data
@@ -44,6 +46,20 @@ class SmallBusinessItemApi {
     //patch request
 
     static deleteSmallBizItem(){
-        
+        const  configObj = {
+            method: 'DELETE',
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+        }
+
+        fetch(`${this.itemsURL}/${this.id}`, configObj)
+        .then(response => response.json())
+        .then(itemData => {
+            const item = itemData.data
+            const newItem = new SmallBusinessItem({id: item.id, ...item.attributes})
+            newItem.addSmallBizItemToDom()
+        })
     }
 }
