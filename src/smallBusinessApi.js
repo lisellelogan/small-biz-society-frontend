@@ -30,7 +30,9 @@ class SmallBusinessApi {
         fetch('http://localhost:3000/small_businesses', configObj)
         .then(response => response.json())
         .then(bizData => {
-            console.log(bizData)
+            const smallBiz = bizData.data
+            const newBiz = new SmallBusiness({id: smallBiz.id, ...smallBiz.attributes})
+            newBiz.addSmallBizToDom()
         })
     }
 }
