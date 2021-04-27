@@ -45,7 +45,7 @@ class SmallBusinessItemApi {
 
     //patch request
 
-    static deleteSmallBizItem(){
+    static deleteSmallBizItem(id){
         const  configObj = {
             method: 'DELETE',
             headers: {
@@ -54,12 +54,10 @@ class SmallBusinessItemApi {
             },
         }
 
-        fetch(`${this.itemsURL}/${this.id}`, configObj)
+        fetch(`${this.itemsURL}/${id}`, configObj)
         .then(response => response.json())
         .then(itemData => {
-            const item = itemData.data
-            const newItem = new SmallBusinessItem({id: item.id, ...item.attributes})
-            newItem.addSmallBizItemToDom()
+            alert(itemData.message)
         })
     }
 }
