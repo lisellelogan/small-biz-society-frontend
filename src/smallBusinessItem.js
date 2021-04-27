@@ -35,7 +35,7 @@ class SmallBusinessItem {
     deleteBizItem = (e) => {
         if (window.confirm('Are you sure you want to delete this?')){
             this.li.remove()
-            SmallBusinessItemApi.deleteBizItem(this.id)
+            SmallBusinessItemApi.deleteSmallBizItem(this.id)
         }
     }
 
