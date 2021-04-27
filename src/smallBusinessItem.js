@@ -22,6 +22,23 @@ class SmallBusinessItem {
     }
 
     handleClick = (e) => {
+        debugger
+        if (e.target.innerText === 'edit this'){
+            e.target.innerText = "update"
+        } else if (e.target.innerText === 'delete this'){
+            this.deleteBizItem(e)
+        } else if (e.target.innerText === 'update'){
+            this.updateBizItem()
+        }
+    }
+
+    deleteBizItem(){
+        if (window.confirm('Are you sure you want to delete?')){
+            addSmallBizItemBtn.remove()
+        }
+    }
+
+    updateBizItem(){
         
     }
 
@@ -34,8 +51,8 @@ class SmallBusinessItem {
             Description: <span class="small-biz-item-description">${this.description}</span><br>
             Type of Product: <span class="small-biz-item-product-type">${this.type_of_product}</span><br>
         </div>
-        <button class="edit" data-id="${this.id}">Edit</button>
-        <button class="delete" data-id="${this.id}">Delete</button>
+        <button class="edit" data-id="${this.id}">edit this</button>
+        <button class="delete" data-id="${this.id}">delete this</button>
         <br><br>
         `
         return this.li
