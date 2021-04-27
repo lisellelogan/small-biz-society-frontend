@@ -32,9 +32,10 @@ class SmallBusinessItem {
         }
     }
 
-    deleteBizItem(){
+    deleteBizItem = (e) => {
         if (window.confirm('Are you sure you want to delete this?')){
-            addSmallBizItemBtn.remove()
+            this.li.remove()
+            SmallBusinessItemApi.deleteBizItem(this.id)
         }
     }
 
