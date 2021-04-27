@@ -27,12 +27,15 @@ class SmallBusinessItem {
             <strong class="small-biz-item-name">${this.name}</strong><br>
             Price: $<span class="small-biz-item-price">${this.price}</span><br>
             Description: <span class="small-biz-item-description">${this.description}</span><br>
-            Type of Product: <span class="small-biz-item-product-type">${this.type_of_product}</span><br><br>
+            Type of Product: <span class="small-biz-item-product-type">${this.type_of_product}</span><br>
         </div>
+        <button class="edit" data-id="${this.id}">Edit</button>
+        <button class="delete" data-id="${this.id}">Delete</button>
+        <br><br>
         `
         return this.li
     }
-    
+
     addSmallBizItemToDom(){
         smallBizItemList.append(this.addToLi())
     }
