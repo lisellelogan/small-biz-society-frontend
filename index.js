@@ -31,13 +31,6 @@ function handleItemSubmit(e){
   SmallBusinessItemApi.createSmallBizItem()
   smallBizItemForm.reset()
   addSmallBizItem.append(addSmallBizItemBtn)
-  //grab value from input field
-  // const bizNameInput = document.getElementById('new-biz-name')
-  // const bizPriceRangeInput = document.getElementById('new-biz-price-range')
-  // const bizAddressInput = document.getElementById('new-biz-address')
-  //add new biz to list
-  //reset the page so form is gone
-  //add button back 
 }
 
 SmallBusinessItemApi.getSmallBusinessesItems()
