@@ -24,12 +24,20 @@ class SmallBusinessItem {
     handleClick = (e) => {
         if (e.target.innerText === 'edit this'){
             e.target.innerText = "update"
+            this.editItemForm(e.target)
         } else if (e.target.innerText === 'delete this'){
             this.deleteBizItem(e)
         } else if (e.target.innerText === 'update'){
             e.target.innerText = 'edit this'
             this.updateBizItem()
         }
+    }
+
+    editItemForm = (btn) => {
+        const editLi = btn.parentElement
+        const editDiv = btn.parentElement.firstElementChild
+        
+        
     }
 
     deleteBizItem = (e) => {
