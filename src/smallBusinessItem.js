@@ -66,7 +66,6 @@ class SmallBusinessItem {
         const typeOfProduct = editLi.querySelector('.update-item-type-of-product').value
         const imgUrl = editLi.querySelector('.update-item-image-url').value
 
-        debugger
         SmallBusinessItemApi.patchItem()
     }
 
