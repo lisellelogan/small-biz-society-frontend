@@ -62,10 +62,10 @@ class SmallBusinessItemApi {
             },
         }
 
-        fetch(`${this.itemsURL}/${id}`, configObj)
+        fetch(`${this.itemsURL}/${bizItem.id}`, configObj)
         .then(response => response.json())
         .then(itemData => {
-            //add to code here
+            bizItem.addToLi()
         })
     }
 
