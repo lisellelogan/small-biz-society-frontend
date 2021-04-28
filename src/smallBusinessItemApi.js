@@ -60,6 +60,7 @@ class SmallBusinessItemApi {
                 "Content-Type": "application/json",
                 Accept: "application/json"
             },
+            body: JSON.stringify(bizItemInfo)
         }
 
         fetch(`${this.itemsURL}/${bizItem.id}`, configObj)
