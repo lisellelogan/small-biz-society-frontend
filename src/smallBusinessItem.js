@@ -27,6 +27,7 @@ class SmallBusinessItem {
         } else if (e.target.innerText === 'delete this'){
             this.deleteBizItem(e)
         } else if (e.target.innerText === 'update'){
+            e.target.innerText = 'edit this'
             this.updateBizItem()
         }
     }
