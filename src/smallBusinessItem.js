@@ -29,7 +29,7 @@ class SmallBusinessItem {
             this.deleteBizItem(e)
         } else if (e.target.innerText === 'update'){
             e.target.innerText = 'edit this'
-            this.updateBizItem()
+            this.updateBizItem(e.target.parentElement)
         }
     }
 
@@ -59,8 +59,8 @@ class SmallBusinessItem {
         }
     }
 
-    updateBizItem(){
-
+    updateBizItem(parentElement){
+        
     }
 
     addToLi(){
