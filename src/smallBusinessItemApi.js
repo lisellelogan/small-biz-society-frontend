@@ -43,7 +43,31 @@ class SmallBusinessItemApi {
         })
     }
 
-    //patch request
+    static patchItem(bizItem){
+        let {name, price, description, type_of_product, image_url} = bizItem
+
+        const bizItemInfo = {
+            name,
+            price,
+            description,
+            type_of_product,
+            image_url
+        }
+
+        const  configObj = {
+            method: 'PATCH',
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+        }
+
+        fetch(`${this.itemsURL}/${id}`, configObj)
+        .then(response => response.json())
+        .then(itemData => {
+            //add to code here
+        })
+    }
 
     static deleteSmallBizItem(id){
         const  configObj = {
