@@ -28,8 +28,8 @@ class SmallBusinessItem {
         } else if (e.target.innerText === 'delete this'){
             this.deleteBizItem(e)
         } else if (e.target.innerText === 'update'){
-            e.target.innerText = 'edit this'
             this.updateBizItem(e.target.parentElement)
+            e.target.innerText = 'edit this'
         }
     }
 
@@ -59,12 +59,12 @@ class SmallBusinessItem {
         }
     }
 
-    updateBizItem(editLi){
-        const name = editLi.querySelector('.update-item-name').value
-        const price = editLi.querySelector('.update-item-price').value
-        const description = editLi.querySelector('.update-item-description').value
-        const typeOfProduct = editLi.querySelector('.update-item-type-of-product').value
-        const imgUrl = editLi.querySelector('.update-item-image-url').value
+    updateBizItem = (editLi) => {
+        this.name = editLi.querySelector('.update-item-name').value
+        this.price = editLi.querySelector('.update-item-price').value
+        this.description = editLi.querySelector('.update-item-description').value
+        this.typeOfProduct = editLi.querySelector('.update-item-type-of-product').value
+        this.imgUrl = editLi.querySelector('.update-item-image-url').value
         
         SmallBusinessItemApi.patchItem(this)
     }
