@@ -59,8 +59,15 @@ class SmallBusinessItem {
         }
     }
 
-    updateBizItem(parentElement){
-        
+    updateBizItem(editLi){
+        const name = editLi.querySelector('.update-item-name').value
+        const price = editLi.querySelector('.update-item-price').value
+        const description = editLi.querySelector('.update-item-description').value
+        const typeOfProduct = editLi.querySelector('.update-item-type-of-product').value
+        const imgUrl = editLi.querySelector('.update-item-image-url').value
+
+        debugger
+        SmallBusinessItemApi.patchItem()
     }
 
     addToLi(){
