@@ -37,7 +37,19 @@ class SmallBusinessItem {
         const editLi = btn.parentElement
         const editDiv = btn.parentElement.firstElementChild
         
-        
+        const name = editLi.querySelector('.small-biz-item-name').innerText
+        const price = editLi.querySelector('.small-biz-item-price').innerText
+        const description = editLi.querySelector('.small-biz-item-description').innerText
+        const typeOfProduct = editLi.querySelector('.small-biz-item-product-type').innerText
+        const imgUrl = editLi.querySelector('.small-biz-item-image').innerText
+
+        editDiv.innerHTML = `
+        Name: <input type="text" name="name" class="update-item-name" value="${name}"></input><br>
+        Price: <input type="float" name="price" class="update-item-price" value="${price}"></input><br>
+        Description: <input type="text" name="description" class="update-item-description" value="${description}"></input><br>
+        Type of Product: <input type="text" name="type_of_product" class="update-item-type-of-product" value="${typeOfProduct}"></input><br>
+        Image URL: <input type="text" name="image_url" class="update-item-image-url" value="${imgUrl}"></input><br>
+        `
     }
 
     deleteBizItem = (e) => {
