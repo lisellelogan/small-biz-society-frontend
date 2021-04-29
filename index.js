@@ -44,11 +44,12 @@ function handleSubmit(e){
   if (e.target === smallBizForm){
     smallBizForm.style.display = "none"
     SmallBusinessApi.createSmallBiz()
+    smallBizForm.reset()
     addSmallBiz.append(addSmallBizBtn)
   } else if (e.target === smallBizItemForm){
     smallBizItemForm.style.display = "none"
     SmallBusinessItemApi.createSmallBizItem()
-    // smallBizItemForm.reset()
+    smallBizItemForm.reset()
     addSmallBizItem.append(addSmallBizItemBtn)
   }
 }
