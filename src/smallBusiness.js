@@ -26,6 +26,13 @@ class SmallBusiness {
         }
     }
 
+    deleteBiz =(e) => {
+        if (window.confirm('Are you sure you want to delete this?')){
+            this.li.remove()
+            SmallBusinessApi.deleteSmallBiz(this.id)
+        }
+    }
+
     addBizToLi(){
         this.li.innerHTML = `
         <div data-id="${this.id}">
