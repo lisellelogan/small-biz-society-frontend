@@ -11,7 +11,7 @@ class SmallBusiness {
         this.li = document.createElement("li")
         this.li.id = `small-biz-${this.id}`
 
-        this.li,addEventListener('click', this.handleClick)
+        this.li.addEventListener('click', this.handleClick)
 
         SmallBusiness.all.push(this)
     }
@@ -23,6 +23,7 @@ class SmallBusiness {
         } else if (e.target.innerText === 'delete this'){
             this.deleteBiz(e)
         } else if (e.target.innerText === 'update'){
+            this.updateBiz(e.target.parentElement)
             e.target.innerText = 'edit this'
         }
     }
@@ -42,6 +43,12 @@ class SmallBusiness {
         `
     }
 
+    updateBiz = (editLi) => {
+        this.name = editLi.querySelector('.update-biz-name').value
+        this.price_range = editLi.querySelector('.update-biz-price-range').value
+        this.address = editLi.querySelector('.update-biz-address').value
+    }
+
     deleteBiz =(e) => {
         if (window.confirm('Are you sure you want to delete this?')){
             this.li.remove()
@@ -53,7 +60,7 @@ class SmallBusiness {
         this.li.innerHTML = `
         <div data-id="${this.id}">
             <strong class="small-biz-name">${this.name}</strong><br>
-            Price Range: $<span class="small-biz-price-range">${this.price_range}</span><br>
+            Price Range: <span class="small-biz-price-range">${this.price_range}</span><br>
             Address: <span class="small-biz-address">${this.address}</span><br>
         </div>
         <button class="biz-edit" data-id="${this.id}">edit this</button>
