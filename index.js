@@ -1,4 +1,6 @@
 const smallbizsocietyContent = document.getElementById("smallbizsociety-content")
+const loginBtn = document.getElementById('login')
+const joinBtn = document.getElementById('join')
 
 const smallBizList = document.getElementById('small-biz-list')
 const addSmallBiz = document.getElementById('add-small-biz')
