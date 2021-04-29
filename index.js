@@ -1,3 +1,5 @@
+const smallbizsocietyContent = document.getElementById("smallbizsociety-content")
+
 const smallBizList = document.getElementById('small-biz-list')
 const addSmallBiz = document.getElementById('add-small-biz')
 const smallBizForm = document.getElementById('small-biz-form')
@@ -47,7 +49,7 @@ function handleSubmit(e){
     SmallBusinessApi.createSmallBiz()
     smallBizForm.reset()
     addSmallBiz.append(addSmallBizBtn)
-    
+
   } else if (e.target === smallBizItemForm){
     smallBizItemForm.style.display = "none"
     SmallBusinessItemApi.createSmallBizItem()
