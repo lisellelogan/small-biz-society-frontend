@@ -18,6 +18,7 @@ const bizItemTypeInput = document.getElementById('new-item-type-of-product')
 const bizItemImageUrlInput = document.getElementById('new-item-image-url')
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
+smallbizsocietyContent.style.display = "none"
 
 function hideForms(){
   smallBizForm.style.display = "none"
