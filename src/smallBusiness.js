@@ -47,6 +47,8 @@ class SmallBusiness {
         this.name = editLi.querySelector('.update-biz-name').value
         this.price_range = editLi.querySelector('.update-biz-price-range').value
         this.address = editLi.querySelector('.update-biz-address').value
+
+        SmallBusinessApi.patchBiz(this)
     }
 
     deleteBiz =(e) => {
