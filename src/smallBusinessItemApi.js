@@ -76,7 +76,7 @@ class SmallBusinessItemApi {
             headers: {
                 "Content-Type": "application/json",
                 Accept: "application/json"
-            },
+            }
         }
 
         fetch(`${this.itemsURL}/${id}`, configObj)

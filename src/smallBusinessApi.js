@@ -37,5 +37,21 @@ class SmallBusinessApi {
             newBusiness.addSmallBizToDom()
         })
     }
+
+    static deleteSmallBiz(id){
+        const configObj = {
+            method: 'POST',
+            headers: {
+                "Content-Type": 'application/json',
+                Accept: 'application/json'
+            }
+        }
+
+        fetch(`${this.smallBizURL}/${id}`, configObj)
+        .then(response => response.json())
+        .then(bizData => {
+            alert(bizData.message)
+        })
+    }
     
 }
