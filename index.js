@@ -22,6 +22,12 @@ const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
 smallbizsocietyContent.style.display = "none"
 
+loginBtn.addEventListener('click', handleBizLogin)
+
+function handleBizLogin(){
+  SmallBusiness.handleLogin()
+}
+
 function hideForms(){
   smallBizForm.style.display = "none"
   smallBizItemForm.style.display = "none"
