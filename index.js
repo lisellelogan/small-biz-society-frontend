@@ -24,16 +24,22 @@ function hideForms(){
 
 hideForms()
 
-addSmallBizItemBtn.addEventListener('click', handleItemBtnEvent)
+addSmallBizBtn.addEventListener('click', handleBtnEvent)
+addSmallBizItemBtn.addEventListener('click', handleBtnEvent)
 
-function handleItemBtnEvent(){
-  addSmallBizItemBtn.remove()
-  smallBizItemForm.style.display = "block"
-
-  smallBizItemForm.addEventListener('submit', handleItemSubmit)
+function handleBtnEvent(e){
+  if (e.target.innerText === "add biz"){
+    addSmallBizBtn.remove()
+    smallBizForm.style.display = "block"
+    smallBizForm.addEventListener('submit', handleSubmit)
+  } else if (e.target.innerText === "add item"){
+    addSmallBizItemBtn.remove()
+    smallBizItemForm.style.display = "block"
+    smallBizItemForm.addEventListener('submit', handleSubmit)
+  }
 }
 
-function handleItemSubmit(e){
+function handleSubmit(e){
   e.preventDefault()
   smallBizItemForm.style.display = "none"
   SmallBusinessItemApi.createSmallBizItem()
