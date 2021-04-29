@@ -1,9 +1,9 @@
 class SmallBusinessApi {
 
-    static smallBizURL = 'http://localhost:3000/small_businesses'
+    static bizURL = 'http://localhost:3000/small_businesses'
     
     static getSmallBusinesses(){
-        fetch(this.smallBizURL)
+        fetch(this.bizURL)
         .then(response => response.json())
         .then(json => {
             json.data.forEach(smallBusiness => {
@@ -29,12 +29,37 @@ class SmallBusinessApi {
             body: JSON.stringify(bizFormData)
         }
 
-        fetch(this.smallBizURL, configObj)
+        fetch(this.bizURL, configObj)
         .then(response => response.json())
         .then(bizData => {
             const biz = bizData.data
             const newBusiness = new SmallBusiness({id: biz.id, ...biz.attributes})
             newBusiness.addSmallBizToDom()
+        })
+    }
+
+    static patchBiz(biz){
+        let {name, price_range, address} = biz
+
+        const bizInfo = {
+            name,
+            price_range,
+            address
+        }
+
+        const configObj = {
+            method: 'PATCH',
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify(bizInfo)
+        }
+
+        fetch(`${this.bizURL}/${biz.id}`, configObj)
+        .then(response => response.json())
+        .then(bizData => {
+            biz.addBizToLi()
         })
     }
 
@@ -47,7 +72,7 @@ class SmallBusinessApi {
             }
         }
 
-        fetch(`${this.smallBizURL}/${id}`, configObj)
+        fetch(`${this.bizURL}/${id}`, configObj)
         .then(response => response.json())
         .then(bizData => {
             alert(bizData.message)
