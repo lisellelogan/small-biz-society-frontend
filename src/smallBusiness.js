@@ -11,8 +11,19 @@ class SmallBusiness {
         this.li = document.createElement("li")
         this.li.id = `small-biz-${this.id}`
 
+        this.li,addEventListener('click', this.handleClick)
 
         SmallBusiness.all.push(this)
+    }
+
+    handleClick = (e) => {
+        if (e.target.innerText === 'edit this'){
+            e.target.innerText = 'update'
+        } else if (e.target.innerText === 'delete this'){
+            this.deleteBiz()
+        } else if (e.target.innerText === 'update'){
+            e.target.innerText = 'edit this'
+        }
     }
 
     addBizToLi(){
