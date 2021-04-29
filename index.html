@@ -15,12 +15,25 @@
 
   <body>
 
-    <h2>small businesses</h2>
+    <h2>small biz</h2>
 
     <ul id="small-biz-list">
     </ul>
 
-    <h2>small business items</h2>
+    <div id="add-small-biz">
+      <form id="small-biz-form">
+        <label for="biz-name">Biz Name: </label><br>
+        <input type="text" name="name" id="new-biz-name"></input><br>
+        <label for="biz-price-range">Price Range: </label><br>
+        <input type="text" name="price_range" id="new-biz-price-range"></input><br>
+        <label for="biz-address">Address: </label><br>
+        <input type="text" name="address" id="new-biz-address"></input><br>
+        <input id="create-biz" type="submit" value="Add My Biz"></input>
+      </form>
+      <button id="add-small-biz-button">Add Biz</button>
+    </div>
+
+    <h2>small biz items</h2>
 
     <ul id="small-biz-item-list">
     </ul>
