@@ -19,11 +19,21 @@ class SmallBusiness {
     handleClick = (e) => {
         if (e.target.innerText === 'edit this'){
             e.target.innerText = 'update'
+            this.editBizForm(e.target)
         } else if (e.target.innerText === 'delete this'){
-            this.deleteBiz()
+            this.deleteBiz(e)
         } else if (e.target.innerText === 'update'){
             e.target.innerText = 'edit this'
         }
+    }
+
+    editBizForm = (btn) => {
+        const editLi = btn.parentElement
+        const editDiv = btn.parentElement.firstElementChild
+        
+        const name = editLi.querySelector('.small-biz-name').innerText
+        const priceRange = editLi.querySelector('.small-biz-price-range').innerText
+        const address = editLi.querySelector('.small-biz-address').innerText
     }
 
     deleteBiz =(e) => {
