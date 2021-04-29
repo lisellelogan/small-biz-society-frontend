@@ -16,6 +16,13 @@ class SmallBusiness {
         SmallBusiness.all.push(this)
     }
 
+    handleLogin(){
+        //will display login form
+        //match if user input === database
+        //display body
+        //else display error
+    }
+
     handleClick = (e) => {
         if (e.target.innerText === 'edit this'){
             e.target.innerText = 'update'
@@ -23,7 +30,7 @@ class SmallBusiness {
 
         } else if (e.target.innerText === 'delete this'){
             this.deleteBiz(e)
-            
+
         } else if (e.target.innerText === 'update'){
             this.updateBiz(e.target.parentElement)
             e.target.innerText = 'edit this'
