@@ -41,10 +41,16 @@ function handleBtnEvent(e){
 
 function handleSubmit(e){
   e.preventDefault()
-  smallBizItemForm.style.display = "none"
-  SmallBusinessItemApi.createSmallBizItem()
-  smallBizItemForm.reset()
-  addSmallBizItem.append(addSmallBizItemBtn)
+  if (e.target === smallBizForm){
+    smallBizForm.style.display = "none"
+    SmallBusinessApi.createSmallBiz()
+    addSmallBiz.append(addSmallBizBtn)
+  } else if (e.target === smallBizItemForm){
+    smallBizItemForm.style.display = "none"
+    SmallBusinessItemApi.createSmallBizItem()
+    // smallBizItemForm.reset()
+    addSmallBizItem.append(addSmallBizItemBtn)
+  }
 }
 
 SmallBusinessItemApi.getSmallBusinessesItems()
