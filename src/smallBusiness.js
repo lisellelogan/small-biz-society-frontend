@@ -34,6 +34,12 @@ class SmallBusiness {
         const name = editLi.querySelector('.small-biz-name').innerText
         const priceRange = editLi.querySelector('.small-biz-price-range').innerText
         const address = editLi.querySelector('.small-biz-address').innerText
+
+        editDiv.innerHTML = `
+        Name: <input type="text" name="name" class="update-biz-name" value="${name}"></input><br>
+        Price Range: <input type="text" name="price_range" class="update-biz-price-range" value="${priceRange}"></input><br>
+        Address: <input type="text" name="address" class="update-biz-address" value="${address}"></input><br>
+        `
     }
 
     deleteBiz =(e) => {
