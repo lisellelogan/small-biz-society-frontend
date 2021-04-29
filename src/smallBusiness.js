@@ -16,8 +16,6 @@ class SmallBusiness {
     }
 
     addBizToLi(){
-        // this.li.innerText = `Business Name: ${this.name} - Price Range: ${this.price_range} - Address: ${this.address}`
-        // return this.li
         this.li.innerHTML = `
         <div data-id="${this.id}">
             <strong class="small-biz-name">${this.name}</strong><br>
