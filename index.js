@@ -17,11 +17,12 @@ const bizItemImageUrlInput = document.getElementById('new-item-image-url')
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
 
-function hideSmallBizItemForm(){
+function hideForms(){
+  smallBizForm.style.display = "none"
   smallBizItemForm.style.display = "none"
 }
 
-hideSmallBizItemForm()
+hideForms()
 
 addSmallBizItemBtn.addEventListener('click', handleItemBtnEvent)
 
