@@ -32,6 +32,7 @@ function handleBtnEvent(e){
     addSmallBizBtn.remove()
     smallBizForm.style.display = "block"
     smallBizForm.addEventListener('submit', handleSubmit)
+
   } else if (e.target.innerText === "add item"){
     addSmallBizItemBtn.remove()
     smallBizItemForm.style.display = "block"
@@ -46,6 +47,7 @@ function handleSubmit(e){
     SmallBusinessApi.createSmallBiz()
     smallBizForm.reset()
     addSmallBiz.append(addSmallBizBtn)
+    
   } else if (e.target === smallBizItemForm){
     smallBizItemForm.style.display = "none"
     SmallBusinessItemApi.createSmallBizItem()

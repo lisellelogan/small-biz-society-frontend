@@ -25,8 +25,10 @@ class SmallBusinessItem {
         if (e.target.innerText === 'edit this'){
             e.target.innerText = "update"
             this.editItemForm(e.target)
+
         } else if (e.target.innerText === 'delete this'){
             this.deleteBizItem(e)
+            
         } else if (e.target.innerText === 'update'){
             this.updateBizItem(e.target.parentElement)
             e.target.innerText = 'edit this'
