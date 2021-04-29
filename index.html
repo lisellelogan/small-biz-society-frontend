@@ -4,55 +4,60 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <nav id="nav-bar">
-      <button id="home-button">home</button>
-      <button id="small-biz-button">small biz</button>
-      <button id="items-button">items</button>
-    </nav>
+    
     <title>smallbizsociety.</title> <!-- the tab header -->
     <h1>smallbizsociety.</h1> <!--page header-->
   </head>
 
-  <body id="smallbizsociety-body">
+  <body>
+    <div id="smallbizsociety-content">
 
-    <h2>small biz</h2>
+      <nav id="nav-bar">
+        <button id="home-button">home</button>
+        <button id="small-biz-button">small biz</button>
+        <button id="items-button">items</button>
+      </nav>
 
-    <ul id="small-biz-list">
-    </ul>
+      <h2>small biz</h2>
 
-    <div id="add-small-biz">
-      <form id="small-biz-form">
-        <label for="biz-name">Biz Name: </label><br>
-        <input type="text" name="name" id="new-biz-name"></input><br>
-        <label for="biz-price-range">Price Range: </label><br>
-        <input type="text" name="price_range" id="new-biz-price-range"></input><br>
-        <label for="biz-address">Address: </label><br>
-        <input type="text" name="address" id="new-biz-address"></input><br>
-        <input id="create-biz" type="submit" value="Add My Biz"></input>
-      </form>
-      <button id="add-small-biz-button">add biz</button>
-    </div>
+      <ul id="small-biz-list">
+      </ul>
 
-    <h2>small biz items</h2>
+      <div id="add-small-biz">
+        <form id="small-biz-form">
+          <label for="biz-name">Biz Name: </label><br>
+          <input type="text" name="name" id="new-biz-name"></input><br>
+          <label for="biz-price-range">Price Range: </label><br>
+          <input type="text" name="price_range" id="new-biz-price-range"></input><br>
+          <label for="biz-address">Address: </label><br>
+          <input type="text" name="address" id="new-biz-address"></input><br>
+          <input id="create-biz" type="submit" value="Add My Biz"></input>
+        </form>
+        <button id="add-small-biz-button">add biz</button>
+      </div>
 
-    <ul id="small-biz-item-list">
-    </ul>
-  
-    <div id="add-small-biz-item">
-      <form id="small-biz-item-form">
-        <label for="item-name">Item Name: </label><br>
-        <input type="text" name="name" id="new-item-name"></input><br>
-        <label for="item-price">Price: </label><br>
-        <input type="float" name="price" id="new-item-price"></input><br>
-        <label for="item-description">Description: </label><br>
-        <input type="text" name="description" id="new-item-description"></input><br>
-        <label for="item-type-of-product">Type of Product: </label><br>
-        <input type="text" name="type_of_product" id="new-item-type-of-product"></input><br>
-        <label for="item-image-url">Image URL: </label><br>
-        <input type="text" name="image_url" id="new-item-image-url"></input><br>
-        <input id="create-item" type="submit" value="Add My Item"></input>
-      </form>
-      <button id="add-small-biz-item-button">add item</button>
+      <h2>small biz items</h2>
+
+      <ul id="small-biz-item-list">
+      </ul>
+    
+      <div id="add-small-biz-item">
+        <form id="small-biz-item-form">
+          <label for="item-name">Item Name: </label><br>
+          <input type="text" name="name" id="new-item-name"></input><br>
+          <label for="item-price">Price: </label><br>
+          <input type="float" name="price" id="new-item-price"></input><br>
+          <label for="item-description">Description: </label><br>
+          <input type="text" name="description" id="new-item-description"></input><br>
+          <label for="item-type-of-product">Type of Product: </label><br>
+          <input type="text" name="type_of_product" id="new-item-type-of-product"></input><br>
+          <label for="item-image-url">Image URL: </label><br>
+          <input type="text" name="image_url" id="new-item-image-url"></input><br>
+          <input id="create-item" type="submit" value="Add My Item"></input>
+        </form>
+        <button id="add-small-biz-item-button">add item</button>
+      </div>
+
     </div>
 
   </body>
