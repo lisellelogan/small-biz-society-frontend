@@ -78,8 +78,8 @@ class SmallBusinessItem {
             Description: <span class="small-biz-item-description">${this.description}</span><br>
             Type of Product: <span class="small-biz-item-product-type">${this.type_of_product}</span><br>
         </div>
-        <button class="edit" data-id="${this.id}">edit this</button>
-        <button class="delete" data-id="${this.id}">delete this</button>
+        <button class="item-edit" data-id="${this.id}">edit this</button>
+        <button class="item-delete" data-id="${this.id}">delete this</button>
         <br><br>
         `
         return this.li
