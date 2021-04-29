@@ -52,13 +52,6 @@ class SmallBusinessItem {
         `
     }
 
-    deleteBizItem = (e) => {
-        if (window.confirm('Are you sure you want to delete this?')){
-            this.li.remove()
-            SmallBusinessItemApi.deleteSmallBizItem(this.id)
-        }
-    }
-
     updateBizItem = (editLi) => {
         this.name = editLi.querySelector('.update-item-name').value
         this.price = editLi.querySelector('.update-item-price').value
@@ -67,6 +60,13 @@ class SmallBusinessItem {
         this.imgUrl = editLi.querySelector('.update-item-image-url').value
         
         SmallBusinessItemApi.patchItem(this)
+    }
+
+    deleteBizItem = (e) => {
+        if (window.confirm('Are you sure you want to delete this?')){
+            this.li.remove()
+            SmallBusinessItemApi.deleteSmallBizItem(this.id)
+        }
     }
 
     addToLi(){
