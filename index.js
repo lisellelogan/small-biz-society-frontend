@@ -35,13 +35,15 @@ hideForms()
 loginBtn.addEventListener('click', handleBizLogin)
 joinBtn.addEventListener('click', handleBizJoin)
 
-function handleBizLogin(){
-  SmallBusiness.handleLoginClick()
-}
 
-function handleBizJoin(){
-  SmallBusiness.handleJoinClick()
-}
+
+// function handleBizLogin(){
+//   SmallBusiness.handleLoginClick()
+// }
+
+// function handleBizJoin(e){
+//   SmallBusiness.handleJoinClick(e)
+// }
 
 // addSmallBizBtn.addEventListener('click', handleBtnEvent)
 addSmallBizItemBtn.addEventListener('click', handleBtnEvent)

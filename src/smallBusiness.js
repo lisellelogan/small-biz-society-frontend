@@ -33,10 +33,24 @@ class SmallBusiness {
         })
     }
 
-    static handleJoinClick(){
+    static handleJoinClick(e){
         joinBtn.remove()
-        //display add small biz form
-        //display app content
+        smallBizForm.style.display = "block"
+        debugger
+        // if (e.target.innerText === "join us"){
+        //     smallBizForm.addEventListener('submit', this.handleJoinSubmit)
+        // } else if (e.target.innerText === "login"){
+        //     debugger
+        //     this.handleLoginClick()
+        // }
+        if (e.target.innerText === "login"){
+            this.handleLoginClick()
+        }
+    }
+
+    static handleJoinSubmit(e){
+        e.preventDefault()
+        debugger
     }
 
     handleClick = (e) => {
