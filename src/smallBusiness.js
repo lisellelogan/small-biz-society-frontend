@@ -19,10 +19,7 @@ class SmallBusiness {
     static handleLogin(){
         loginBtn.remove()
         loginForm.style.display = "block"
-        //match if user input === database
         loginForm.addEventListener('submit', this.handleLoginSubmit)
-        //display body
-        //else display error
     }
 
     static handleLoginSubmit(e){
