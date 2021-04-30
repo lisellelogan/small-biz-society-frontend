@@ -23,7 +23,14 @@ const bizItemImageUrlInput = document.getElementById('new-item-image-url')
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
 smallbizsocietyContent.style.display = "none"
-loginForm.style.display = "none"
+
+function hideForms(){
+  loginForm.style.display = "none"
+  smallBizForm.style.display = "none"
+  smallBizItemForm.style.display = "none"
+}
+
+hideForms()
 
 loginBtn.addEventListener('click', handleBizLogin)
 joinBtn.addEventListener('click', handleBizJoin)
@@ -35,13 +42,6 @@ function handleBizLogin(){
 function handleBizJoin(){
   SmallBusiness.handleJoinClick()
 }
-
-function hideForms(){
-  smallBizForm.style.display = "none"
-  smallBizItemForm.style.display = "none"
-}
-
-hideForms()
 
 // addSmallBizBtn.addEventListener('click', handleBtnEvent)
 addSmallBizItemBtn.addEventListener('click', handleBtnEvent)
