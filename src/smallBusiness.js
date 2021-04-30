@@ -33,6 +33,12 @@ class SmallBusiness {
         })
     }
 
+    static handleJoinClick(){
+        joinBtn.remove()
+        //display add small biz form
+        //display app content
+    }
+
     handleClick = (e) => {
         if (e.target.innerText === 'edit this'){
             e.target.innerText = 'update'
