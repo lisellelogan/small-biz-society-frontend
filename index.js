@@ -1,6 +1,7 @@
 const smallbizsocietyContent = document.getElementById("smallbizsociety-content")
 const loginBtn = document.getElementById('login')
 const joinBtn = document.getElementById('join')
+const loginForm = document.getElementById('login-form')
 
 const smallBizList = document.getElementById('small-biz-list')
 const addSmallBiz = document.getElementById('add-small-biz')
@@ -21,6 +22,7 @@ const bizItemImageUrlInput = document.getElementById('new-item-image-url')
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
 smallbizsocietyContent.style.display = "none"
+loginForm.style.display = "none"
 
 loginBtn.addEventListener('click', handleBizLogin)
 
