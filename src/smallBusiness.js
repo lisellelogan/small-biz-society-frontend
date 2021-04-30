@@ -16,7 +16,7 @@ class SmallBusiness {
         SmallBusiness.all.push(this)
     }
 
-    static handleLogin(){
+    static handleLoginClick(){
         loginBtn.remove()
         loginForm.style.display = "block"
         loginForm.addEventListener('submit', this.handleLoginSubmit)

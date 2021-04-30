@@ -28,7 +28,7 @@ loginForm.style.display = "none"
 loginBtn.addEventListener('click', handleBizLogin)
 
 function handleBizLogin(){
-  SmallBusiness.handleLogin()
+  SmallBusiness.handleLoginClick()
 }
 
 function hideForms(){
