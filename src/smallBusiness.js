@@ -20,20 +20,20 @@ class SmallBusiness {
         loginBtn.remove()
         loginForm.style.display = "block"
         //match if user input === database
-        const loginName = loginForm.querySelector('#login-biz-name').value
-        SmallBusiness.all.forEach(smallBiz => {
-            if (loginName.toLowerCase() === smallBiz.name.toLowerCase()){
-                debugger
-                loginForm.addEventListener('submit', this.handleLoginSubmit)
-                smallbizsocietyContent.style.display = "block"
-            }
-        })
+        loginForm.addEventListener('submit', this.handleLoginSubmit)
         //display body
         //else display error
     }
 
     static handleLoginSubmit(e){
         e.preventDefault()
+        const loginName = loginForm.querySelector('#login-biz-name').value
+        SmallBusiness.all.forEach(smallBiz => {
+            if (loginName.toLowerCase() === smallBiz.name.toLowerCase()){
+                landingPage.style.display = "none"
+                smallbizsocietyContent.style.display = "block"
+            }
+        })
     }
 
     handleClick = (e) => {
