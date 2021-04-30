@@ -38,6 +38,7 @@ joinBtn.addEventListener('click', handleLoinOrJoinClick)
 function handleLoinOrJoinClick(e){
   if (e.target.innerText === "login"){
     SmallBusiness.handleLoginClick()
+    
   } else if (e.target.innerText === "join us"){
     SmallBusiness.handleJoinClick()
   }
