@@ -26,14 +26,14 @@ smallbizsocietyContent.style.display = "none"
 loginForm.style.display = "none"
 
 loginBtn.addEventListener('click', handleBizLogin)
-joinBtn.addEventListener('click', handleBizSignup)
+joinBtn.addEventListener('click', handleBizJoin)
 
 function handleBizLogin(){
   SmallBusiness.handleLoginClick()
 }
 
-function handleBizSignup(){
-  SmallBusiness.handleBizSignupClick()
+function handleBizJoin(){
+  SmallBusiness.handleJoinClick()
 }
 
 function hideForms(){
