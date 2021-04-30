@@ -32,18 +32,16 @@ function hideForms(){
 
 hideForms()
 
-loginBtn.addEventListener('click', handleBizLogin)
-joinBtn.addEventListener('click', handleBizJoin)
+loginBtn.addEventListener('click', handleLoinOrJoinClick)
+joinBtn.addEventListener('click', handleLoinOrJoinClick)
 
-
-
-// function handleBizLogin(){
-//   SmallBusiness.handleLoginClick()
-// }
-
-// function handleBizJoin(e){
-//   SmallBusiness.handleJoinClick(e)
-// }
+function handleLoinOrJoinClick(e){
+  if (e.target.innerText === "login"){
+    SmallBusiness.handleLoginClick()
+  } else if (e.target.innerText === "join us"){
+    SmallBusiness.handleJoinClick()
+  }
+}
 
 // addSmallBizBtn.addEventListener('click', handleBtnEvent)
 addSmallBizItemBtn.addEventListener('click', handleBtnEvent)
