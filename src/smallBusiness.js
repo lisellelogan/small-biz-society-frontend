@@ -16,8 +16,9 @@ class SmallBusiness {
         SmallBusiness.all.push(this)
     }
 
-    handleLogin(){
-        //will display login form
+    static handleLogin(){
+        loginBtn.remove()
+        loginForm.style.display = "block"
         //match if user input === database
         //display body
         //else display error
