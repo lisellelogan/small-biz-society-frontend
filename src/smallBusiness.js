@@ -36,9 +36,7 @@ class SmallBusiness {
     static handleJoinClick(){
         joinBtn.remove()
         smallBizForm.style.display = "block"
-
         loginBtn.addEventListener('click', this.handleLoinClick)
-        
         smallBizForm.addEventListener('submit', this.handleJoinSubmit)
         
     }
