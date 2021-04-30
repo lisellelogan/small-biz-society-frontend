@@ -10,7 +10,7 @@ const smallBizForm = document.getElementById('small-biz-form')
 const bizNameInput = document.getElementById('new-biz-name')
 const bizPriceRangeInput = document.getElementById('new-biz-price-range')
 const bizAddressInput = document.getElementById('new-biz-address')
-const addSmallBizBtn = document.getElementById('add-small-biz-button')
+// const addSmallBizBtn = document.getElementById('add-small-biz-button')
 
 const smallBizItemList = document.getElementById('small-biz-item-list')
 const addSmallBizItem = document.getElementById('add-small-biz-item')
@@ -43,16 +43,16 @@ function hideForms(){
 
 hideForms()
 
-addSmallBizBtn.addEventListener('click', handleBtnEvent)
+// addSmallBizBtn.addEventListener('click', handleBtnEvent)
 addSmallBizItemBtn.addEventListener('click', handleBtnEvent)
 
 function handleBtnEvent(e){
-  if (e.target.innerText === "add biz"){
-    addSmallBizBtn.remove()
-    smallBizForm.style.display = "block"
-    smallBizForm.addEventListener('submit', handleSubmit)
+  // if (e.target.innerText === "add biz"){
+  //   addSmallBizBtn.remove()
+  //   smallBizForm.style.display = "block"
+  //   smallBizForm.addEventListener('submit', handleSubmit)
 
-  } else if (e.target.innerText === "add item"){
+  if (e.target.innerText === "add item"){
     addSmallBizItemBtn.remove()
     smallBizItemForm.style.display = "block"
     smallBizItemForm.addEventListener('submit', handleSubmit)
@@ -61,13 +61,13 @@ function handleBtnEvent(e){
 
 function handleSubmit(e){
   e.preventDefault()
-  if (e.target === smallBizForm){
-    smallBizForm.style.display = "none"
-    SmallBusinessApi.createSmallBiz()
-    smallBizForm.reset()
-    addSmallBiz.append(addSmallBizBtn)
+  // if (e.target === smallBizForm){
+  //   smallBizForm.style.display = "none"
+  //   SmallBusinessApi.createSmallBiz()
+  //   smallBizForm.reset()
+  //   addSmallBiz.append(addSmallBizBtn)
 
-  } else if (e.target === smallBizItemForm){
+  if (e.target === smallBizItemForm){
     smallBizItemForm.style.display = "none"
     SmallBusinessItemApi.createSmallBizItem()
     smallBizItemForm.reset()
