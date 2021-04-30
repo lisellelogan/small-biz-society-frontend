@@ -20,8 +20,20 @@ class SmallBusiness {
         loginBtn.remove()
         loginForm.style.display = "block"
         //match if user input === database
+        const loginName = loginForm.querySelector('#login-biz-name').value
+        SmallBusiness.all.forEach(smallBiz => {
+            if (loginName.toLowerCase() === smallBiz.name.toLowerCase()){
+                debugger
+                loginForm.addEventListener('submit', this.handleLoginSubmit)
+                smallbizsocietyContent.style.display = "block"
+            }
+        })
         //display body
         //else display error
+    }
+
+    static handleLoginSubmit(e){
+        e.preventDefault()
     }
 
     handleClick = (e) => {
