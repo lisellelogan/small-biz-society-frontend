@@ -30,6 +30,7 @@ class SmallBusiness {
     static handleLoginSubmit(e){
         e.preventDefault()
         const loginName = loginForm.querySelector('#login-biz-name').value
+        const loginError = document.getElementById('login-error')
         
         SmallBusiness.all.forEach(smallBiz => {
             if (loginName.toLowerCase() === smallBiz.name.toLowerCase()){
