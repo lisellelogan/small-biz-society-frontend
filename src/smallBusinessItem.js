@@ -10,7 +10,7 @@ class SmallBusinessItem {
         this.description = description
         this.image_url = image_url
         this.type_of_product = type_of_product
-        this.small_business_id = small_business_id
+        this.smallBusinessId = small_business_id
 
         //makes it a property of object
         this.li = document.createElement('li')
