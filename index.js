@@ -4,6 +4,7 @@ const joinBtn = document.getElementById('join')
 const loginForm = document.getElementById('login-form')
 const loginError = document.getElementById('login-error')
 
+const navBar = document.getElementById('nav-bar')
 const homeBtn = document.getElementById('home-button')
 const smallBizBtn = document.getElementById('small-biz-button')
 const itemsBtn = document.getElementById('items-button')
@@ -32,7 +33,7 @@ const bizDropdown = document.getElementById('select-small-biz')
 
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
-smallbizsocietyContent.style.display = "none"
+navBar.style.display = "none"
 loginError.style.display = "none"
 
 function hideForms(){
