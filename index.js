@@ -76,6 +76,7 @@ function handleNavBtnClick(e){
   } else if (e.target.innerText === "logout"){
     hideContent()
     landingPage.style.display = "block"
+    loginError.style.display = "none"
   }
 }
 
