@@ -130,4 +130,11 @@ class SmallBusiness {
         smallBizList.append(this.addBizToLi())
     }
 
+    addBizToDropdown(){
+        const option = createElement('option')
+        option.value = this.id 
+        option.innerText = this.name 
+        bizDropdown.append(option)
+    }
+
 }
