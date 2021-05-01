@@ -43,14 +43,10 @@ function handleLoinOrJoinClick(e){
   }
 }
 
-addSmallBizItemBtn.addEventListener('click', handleBtnEvent)
+addSmallBizItemBtn.addEventListener('click', handleAddItemBtnClick)
 
-function handleBtnEvent(e){
-  if (e.target.innerText === "add item"){
-    addSmallBizItemBtn.remove()
-    smallBizItemForm.style.display = "block"
-    smallBizItemForm.addEventListener('submit', handleSubmit)
-  }
+function handleAddItemBtnClick(){
+  SmallBusinessItem.handleAddItemClick()
 }
 
 function handleSubmit(e){

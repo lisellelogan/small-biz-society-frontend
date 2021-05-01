@@ -21,6 +21,12 @@ class SmallBusinessItem {
         SmallBusinessItem.all.push(this)
     }
 
+    static handleAddItemClick(){
+        addSmallBizItemBtn.remove()
+        smallBizItemForm.style.display = "block"
+        smallBizItemForm.addEventListener('submit', handleSubmit)
+    }
+
     handleClick = (e) => {
         if (e.target.innerText === 'edit this'){
             e.target.innerText = "update"
