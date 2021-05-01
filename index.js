@@ -52,15 +52,15 @@ function handleAddItemBtnClick(){
   SmallBusinessItem.handleAddItemClick()
 }
 
-function handleSubmit(e){
-  e.preventDefault()
-  if (e.target === smallBizItemForm){
-    smallBizItemForm.style.display = "none"
-    SmallBusinessItemApi.createSmallBizItem()
-    smallBizItemForm.reset()
-    addSmallBizItem.append(addSmallBizItemBtn)
-  }
-}
+// function handleSubmit(e){
+//   e.preventDefault()
+//   if (e.target === smallBizItemForm){
+//     smallBizItemForm.style.display = "none"
+//     SmallBusinessItemApi.createSmallBizItem()
+//     smallBizItemForm.reset()
+//     addSmallBizItem.append(addSmallBizItemBtn)
+//   }
+// }
 
 SmallBusinessItemApi.getSmallBusinessesItems()
 

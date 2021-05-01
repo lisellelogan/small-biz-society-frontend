@@ -24,8 +24,16 @@ class SmallBusinessItem {
     static handleAddItemClick(){
         addSmallBizItemBtn.remove()
         smallBizItemForm.style.display = "block"
-        smallBizItemForm.addEventListener('submit', handleSubmit)
+        smallBizItemForm.addEventListener('submit', this.handleSubmit)
     }
+
+    static handleSubmit(e){
+        e.preventDefault()
+        smallBizItemForm.style.display = "none"
+        SmallBusinessItemApi.createSmallBizItem()
+        smallBizItemForm.reset()
+        addSmallBizItem.append(addSmallBizItemBtn)
+      }
 
     handleClick = (e) => {
         if (e.target.innerText === 'edit this'){
