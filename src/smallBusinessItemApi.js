@@ -16,14 +16,7 @@ class SmallBusinessItemApi {
         })
     }
 
-    static createSmallBizItem(){
-        const itemFormData = {
-            name: bizItemNameInput.value,
-            price: bizItemPriceInput.value,
-            description: bizItemDescriptionInput.value ,
-            type_of_product: bizItemTypeInput.value,
-            image_url: bizItemImageUrlInput.value
-        }
+    static findOrCreateSmallBizItem(bizItem){
 
         const  configObj = {
             method: 'POST',
@@ -31,7 +24,7 @@ class SmallBusinessItemApi {
                 "Content-Type": "application/json",
                 Accept: "application/json"
             },
-            body: JSON.stringify(itemFormData)
+            body: JSON.stringify(bizItem)
         }
 
         fetch(this.itemsURL, configObj)
