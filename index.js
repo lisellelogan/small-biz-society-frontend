@@ -21,6 +21,8 @@ const bizItemPriceInput = document.getElementById('new-item-price')
 const bizItemDescriptionInput = document.getElementById('new-item-description')
 const bizItemTypeInput = document.getElementById('new-item-type-of-product')
 const bizItemImageUrlInput = document.getElementById('new-item-image-url')
+const bizDropdown = document.getElementById('select-small-biz')
+
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
 smallbizsocietyContent.style.display = "none"
