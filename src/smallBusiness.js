@@ -44,6 +44,7 @@ class SmallBusiness {
                 loginError.style.display = "block"
             }
         })
+        loginForm.reset()
     }
 
     static handleJoinClick(){
