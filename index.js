@@ -4,6 +4,8 @@ const joinBtn = document.getElementById('join')
 const loginForm = document.getElementById('login-form')
 const loginError = document.getElementById('login-error')
 
+const homePage = document.getElementById('home-page')
+
 const smallbizsocietyContent = document.getElementById("smallbizsociety-content")
 
 const smallBizList = document.getElementById('small-biz-list')
