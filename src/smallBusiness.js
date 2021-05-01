@@ -29,21 +29,20 @@ class SmallBusiness {
 
     static handleLoginSubmit(e){
         e.preventDefault()
-        if (!this.findBizByName){
-            alert("unable to find you. please try again!")
-        } else {
-            this.findBizByName
-        }
+        SmallBusiness.findBizByName()
     }
 
     static findBizByName(){
         const loginName = loginForm.querySelector('#login-biz-name').value
-        SmallBusiness.all.forEach(smallBiz => {
+        const findSmallBiz = SmallBusiness.all.forEach(smallBiz => {
             if (loginName.toLowerCase() === smallBiz.name.toLowerCase()){
                 landingPage.style.display = "none"
                 smallbizsocietyContent.style.display = "block"
             }
         })
+        if (!findSmallBiz){
+            alert("unable to find you. please try again.")
+        }
     }
 
     static handleJoinClick(){
