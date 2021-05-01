@@ -13,8 +13,7 @@ class SmallBusinessApi {
         })
     }
 
-    static findOrCreateSmallBiz(smallBizData){
-        
+    static findOrCreateSmallBiz(smallBiz){
 
         const configObj = {
             method: 'POST',
@@ -22,7 +21,7 @@ class SmallBusinessApi {
                 "Content-Type": "application/json",
                 Accept: "application/json"
             },
-            body: JSON.stringify(bizFormData)
+            body: JSON.stringify(smallBiz)
         }
 
         fetch(this.bizURL, configObj)

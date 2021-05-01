@@ -55,7 +55,6 @@ class SmallBusiness {
 
     static handleJoinSubmit(e){
         e.preventDefault()
-        debugger
         const bizFormData = {
             name: bizNameInput.value,
             price_range: bizPriceRangeInput.value,
