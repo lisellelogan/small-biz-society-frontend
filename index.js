@@ -44,15 +44,9 @@ function handleLoinOrJoinClick(e){
   }
 }
 
-// addSmallBizBtn.addEventListener('click', handleBtnEvent)
 addSmallBizItemBtn.addEventListener('click', handleBtnEvent)
 
 function handleBtnEvent(e){
-  // if (e.target.innerText === "add biz"){
-  //   addSmallBizBtn.remove()
-  //   smallBizForm.style.display = "block"
-  //   smallBizForm.addEventListener('submit', handleSubmit)
-
   if (e.target.innerText === "add item"){
     addSmallBizItemBtn.remove()
     smallBizItemForm.style.display = "block"
@@ -62,12 +56,6 @@ function handleBtnEvent(e){
 
 function handleSubmit(e){
   e.preventDefault()
-  // if (e.target === smallBizForm){
-  //   smallBizForm.style.display = "none"
-  //   SmallBusinessApi.createSmallBiz()
-  //   smallBizForm.reset()
-  //   addSmallBiz.append(addSmallBizBtn)
-
   if (e.target === smallBizItemForm){
     smallBizItemForm.style.display = "none"
     SmallBusinessItemApi.createSmallBizItem()
