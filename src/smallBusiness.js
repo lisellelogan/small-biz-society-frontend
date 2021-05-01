@@ -16,6 +16,10 @@ class SmallBusiness {
         SmallBusiness.all.push(this)
     }
 
+    smallBizItem(){
+        return SmallBusinessItem.all.filter((bizItem) => bizItem.smallBusinessId === parseInt(this.id))
+    }
+
     static handleLoginClick(){
         loginBtn.remove()
         loginForm.style.display = "block"
