@@ -45,13 +45,15 @@ class SmallBusiness {
         loginForm.style.display = "none"
         landingPage.append(loginBtn)
         loginBtn.addEventListener('click', this.handleLoinClick)
-        
+
         smallBizForm.addEventListener('submit', this.handleJoinSubmit)
     }
 
     static handleJoinSubmit(e){
         e.preventDefault()
-        
+        SmallBusinessApi.createSmallBiz()
+        landingPage.style.display = "none"
+        smallbizsocietyContent.style.display = "block"
     }
 
     handleClick = (e) => {
