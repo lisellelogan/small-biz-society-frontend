@@ -29,6 +29,14 @@ class SmallBusiness {
 
     static handleLoginSubmit(e){
         e.preventDefault()
+        if (!this.findBizByName){
+            alert("unable to find you. please try again!")
+        } else {
+            this.findBizByName
+        }
+    }
+
+    static findBizByName(){
         const loginName = loginForm.querySelector('#login-biz-name').value
         SmallBusiness.all.forEach(smallBiz => {
             if (loginName.toLowerCase() === smallBiz.name.toLowerCase()){
