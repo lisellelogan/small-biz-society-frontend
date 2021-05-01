@@ -5,8 +5,8 @@ const loginForm = document.getElementById('login-form')
 const loginError = document.getElementById('login-error')
 
 const homePage = document.getElementById('home-page')
-
-const smallbizsocietyContent = document.getElementById("smallbizsociety-content")
+const smallBizPage = document.getElementById('small-biz-page')
+const itemsPage = document.getElementById('items-page')
 
 const smallBizList = document.getElementById('small-biz-list')
 const addSmallBiz = document.getElementById('add-small-biz')
