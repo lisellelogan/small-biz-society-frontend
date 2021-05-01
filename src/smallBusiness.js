@@ -131,7 +131,7 @@ class SmallBusiness {
     }
 
     addBizToDropdown(){
-        const option = createElement('option')
+        const option = document.createElement('option')
         option.value = this.id 
         option.innerText = this.name 
         bizDropdown.append(option)

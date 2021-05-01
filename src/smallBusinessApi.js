@@ -31,6 +31,7 @@ class SmallBusinessApi {
             const biz = bizData.data
             const newBusiness = new SmallBusiness({id: biz.id, ...biz.attributes})
             newBusiness.addSmallBizToDom()
+            newBiz.addBizToDropdown()
         })
     }
 
