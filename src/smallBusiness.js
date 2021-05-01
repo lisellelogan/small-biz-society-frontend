@@ -30,17 +30,29 @@ class SmallBusiness {
     static handleLoginSubmit(e){
         e.preventDefault()
         const loginName = loginForm.querySelector('#login-biz-name').value
-        SmallBusiness.findBizByName(loginName)
+
+        const foundBiz = SmallBusiness.all.find(smallBiz => {
+            loginName.toLowerCase() === smallBiz.name.toLowerCase()
+        })
+
+        if (foundBiz){
+            landingPage.style.display = "none"
+            smallbizsocietyContent.style.display = "block"
+        } else if (foundBiz === undefined) {
+            alert('unable to find you! please try again.')
+        }
+        
+        // SmallBusiness.findBizByName(loginName)
     }
 
-    static findBizByName(bizName){
-        SmallBusiness.all.forEach(smallBiz => {
-            if (bizName.toLowerCase() === smallBiz.name.toLowerCase()){
-                landingPage.style.display = "none"
-                smallbizsocietyContent.style.display = "block"
-            }
-        })
-    }
+    // static findBizByName(bizName){
+    //     // SmallBusiness.all.forEach(smallBiz => {
+    //     //     if (bizName.toLowerCase() === smallBiz.name.toLowerCase()){
+    //     //         landingPage.style.display = "none"
+    //     //         smallbizsocietyContent.style.display = "block"
+    //     //     }
+    //     // })
+    
 
     static handleJoinClick(){
         joinBtn.remove()
