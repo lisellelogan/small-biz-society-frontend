@@ -33,11 +33,16 @@ const bizDropdown = document.getElementById('select-small-biz')
 
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
-navBar.style.display = "none"
-homePage.style.display = "none"
-smallBizPage.style.display = "none"
-itemsPage.style.display = "none"
 loginError.style.display = "none"
+
+function hideContent(){
+  navBar.style.display = "none"
+  homePage.style.display = "none"
+  smallBizPage.style.display = "none"
+  itemsPage.style.display = "none"
+}
+
+hideContent()
 
 function hideForms(){
   loginForm.style.display = "none"
@@ -56,6 +61,21 @@ function handleLoinOrJoinClick(e){
     
   } else if (e.target.innerText === "join us"){
     SmallBusiness.handleJoinClick()
+  }
+}
+
+navBar.addEventListener('click', handleNavBtnClick)
+
+function handleNavBtnClick(e){
+  if (e.target.innerText === "home"){
+    homePage.style.display = "block"
+  } else if (e.target.innerText === "small biz"){
+    smallBizPage.style.display = "block"
+  } else if (e.target.innerText === "items"){
+    itemsPage.style.display = "block"
+  } else if (e.target.innerText === "logout"){
+    hideContent()
+    landingPage.style.display = "block"
   }
 }
 
