@@ -29,19 +29,20 @@ class SmallBusiness {
 
     static handleLoginSubmit(e){
         e.preventDefault()
-        SmallBusiness.findBizByName()
+        const loginName = loginForm.querySelector('#login-biz-name').value
+        SmallBusiness.findBizByName(loginName)
     }
 
-    static findBizByName(){
-        const loginName = loginForm.querySelector('#login-biz-name').value
-        const findSmallBiz = SmallBusiness.all.forEach(smallBiz => {
-            if (loginName.toLowerCase() === smallBiz.name.toLowerCase()){
+    static findBizByName(bizName){
+        SmallBusiness.all.forEach(smallBiz => {
+            if (bizName.toLowerCase() === smallBiz.name.toLowerCase()){
                 landingPage.style.display = "none"
                 smallbizsocietyContent.style.display = "block"
             }
+            debugger
         })
-        if (!findSmallBiz){
-            alert("unable to find you. please try again.")
+        if (!!findBiz){
+            alert('unable to find you!')
         }
     }
 
