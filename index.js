@@ -1,9 +1,10 @@
-const smallbizsocietyContent = document.getElementById("smallbizsociety-content")
 const landingPage = document.getElementById('landing-page')
 const loginBtn = document.getElementById('login')
 const joinBtn = document.getElementById('join')
 const loginForm = document.getElementById('login-form')
 const loginError = document.getElementById('login-error')
+
+const smallbizsocietyContent = document.getElementById("smallbizsociety-content")
 
 const smallBizList = document.getElementById('small-biz-list')
 const addSmallBiz = document.getElementById('add-small-biz')
