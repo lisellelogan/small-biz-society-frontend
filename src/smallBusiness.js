@@ -39,11 +39,7 @@ class SmallBusiness {
                 landingPage.style.display = "none"
                 smallbizsocietyContent.style.display = "block"
             }
-            debugger
         })
-        if (!!findBiz){
-            alert('unable to find you!')
-        }
     }
 
     static handleJoinClick(){
@@ -59,7 +55,13 @@ class SmallBusiness {
 
     static handleJoinSubmit(e){
         e.preventDefault()
-        SmallBusinessApi.createSmallBiz()
+        debugger
+        const bizFormData = {
+            name: bizNameInput.value,
+            price_range: bizPriceRangeInput.value,
+            address: bizAddressInput.value
+        }
+        SmallBusinessApi.findOrCreateSmallBiz(bizFormData)
         landingPage.style.display = "none"
         smallbizsocietyContent.style.display = "block"
     }

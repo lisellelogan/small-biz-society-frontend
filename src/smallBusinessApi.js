@@ -13,12 +13,8 @@ class SmallBusinessApi {
         })
     }
 
-    static createSmallBiz(){
-        const bizFormData = {
-            name: bizNameInput.value,
-            price_range: bizPriceRangeInput.value,
-            address: bizAddressInput.value
-        }
+    static findOrCreateSmallBiz(smallBizData){
+        
 
         const configObj = {
             method: 'POST',
