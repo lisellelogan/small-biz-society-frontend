@@ -34,6 +34,9 @@ const bizDropdown = document.getElementById('select-small-biz')
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
 navBar.style.display = "none"
+homePage.style.display = "none"
+smallBizPage.style.display = "none"
+itemsPage.style.display = "none"
 loginError.style.display = "none"
 
 function hideForms(){

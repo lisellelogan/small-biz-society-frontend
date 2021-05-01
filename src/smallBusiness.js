@@ -38,7 +38,8 @@ class SmallBusiness {
         SmallBusiness.all.forEach(smallBiz => {
             if (loginName.toLowerCase() === smallBiz.name.toLowerCase()){
                 landingPage.style.display = "none"
-                smallbizsocietyContent.style.display = "block"
+                navBar.style.display = "block"
+                homePage.style.display = "block"
             } else {
                 loginError.style.display = "block"
             }
