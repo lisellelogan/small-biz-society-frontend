@@ -42,7 +42,7 @@
 
     <div id="smallbizsociety-content">
 
-      <nav id="nav-bar">
+      <nav class="nav-bar">
         <button id="home-button">home</button>
         <button id="small-biz-button">small biz</button>
         <button id="items-button">items</button>
@@ -54,35 +54,39 @@
         <p>this is a platform that allows you to share your passion with the world!</p>
       </div>
 
-      <h2>small biz</h2>
+      <div id="small-biz-page">
+          <h2>small biz</h2>
 
-      <ul id="small-biz-list">
-      </ul>
+          <ul id="small-biz-list">
+          </ul>
+      </div>
 
-      <h2>small biz items</h2>
+      <div id="items-page">
+        <h2>small biz items</h2>
 
-      <ul id="small-biz-item-list">
-      </ul>
-    
-      <div id="add-small-biz-item">
-        <form id="small-biz-item-form">
-          <label for="item-name">Item Name: </label><br>
-          <input type="text" name="name" id="new-item-name"></input><br>
-          <label for="item-price">Price: </label><br>
-          <input type="float" name="price" id="new-item-price"></input><br>
-          <label for="item-description">Description: </label><br>
-          <input type="text" name="description" id="new-item-description"></input><br>
-          <label for="item-type-of-product">Type of Product: </label><br>
-          <input type="text" name="type_of_product" id="new-item-type-of-product"></input><br>
-          <label for="item-image-url">Image URL: </label><br>
-          <input type="text" name="image_url" id="new-item-image-url"></input><br>
+        <ul id="small-biz-item-list">
+        </ul>
+      
+        <div id="add-small-biz-item">
+          <form id="small-biz-item-form">
+            <label for="item-name">Item Name: </label><br>
+            <input type="text" name="name" id="new-item-name"></input><br>
+            <label for="item-price">Price: </label><br>
+            <input type="float" name="price" id="new-item-price"></input><br>
+            <label for="item-description">Description: </label><br>
+            <input type="text" name="description" id="new-item-description"></input><br>
+            <label for="item-type-of-product">Type of Product: </label><br>
+            <input type="text" name="type_of_product" id="new-item-type-of-product"></input><br>
+            <label for="item-image-url">Image URL: </label><br>
+            <input type="text" name="image_url" id="new-item-image-url"></input><br>
 
-          <label for="select-small-biz">small biz: </label>
-          <select name="small_business_id" id="select-small-biz"></select>
+            <label for="select-small-biz">small biz: </label>
+            <select name="small_business_id" id="select-small-biz"></select>
 
-          <input id="create-item" type="submit" value="Add My Item"></input>
-        </form>
-        <button id="add-small-biz-item-button">add item</button>
+            <input id="create-item" type="submit" value="Add My Item"></input>
+          </form>
+          <button id="add-small-biz-item-button">add item</button>
+        </div>
       </div>
 
     </div>
