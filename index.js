@@ -5,10 +5,6 @@ const loginForm = document.getElementById('login-form')
 const loginError = document.getElementById('login-error')
 
 const navBar = document.getElementById('nav-bar')
-const homeBtn = document.getElementById('home-button')
-const smallBizBtn = document.getElementById('small-biz-button')
-const itemsBtn = document.getElementById('items-button')
-const logoutBtn = document.getElementById('logout')
 
 const homePage = document.getElementById('home-page')
 const smallBizPage = document.getElementById('small-biz-page')
