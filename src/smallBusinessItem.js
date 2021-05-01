@@ -29,8 +29,6 @@ class SmallBusinessItem {
 
     static handleSubmit(e){
         e.preventDefault()
-        smallBizItemForm.style.display = "none"
-
         const itemFormData = {
             name: bizItemNameInput.value,
             price: bizItemPriceInput.value,
@@ -41,6 +39,7 @@ class SmallBusinessItem {
         }
 
         SmallBusinessItemApi.findOrCreateSmallBizItem(itemFormData)
+        smallBizItemForm.style.display = "none"
         smallBizItemForm.reset()
         addSmallBizItem.append(addSmallBizItemBtn)
       }
