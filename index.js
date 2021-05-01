@@ -34,9 +34,9 @@ const bizDropdown = document.getElementById('select-small-biz')
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
 loginError.style.display = "none"
+navBar.style.display = "none"
 
 function hideContent(){
-  navBar.style.display = "none"
   homePage.style.display = "none"
   smallBizPage.style.display = "none"
   itemsPage.style.display = "none"
@@ -68,14 +68,18 @@ navBar.addEventListener('click', handleNavBtnClick)
 
 function handleNavBtnClick(e){
   if (e.target.innerText === "home"){
+    hideContent()
     homePage.style.display = "block"
   } else if (e.target.innerText === "small biz"){
+    hideContent()
     smallBizPage.style.display = "block"
   } else if (e.target.innerText === "items"){
+    hideContent()
     itemsPage.style.display = "block"
   } else if (e.target.innerText === "logout"){
     hideContent()
     landingPage.style.display = "block"
+    navBar.style.display = "none"
     loginError.style.display = "none"
   }
 }
