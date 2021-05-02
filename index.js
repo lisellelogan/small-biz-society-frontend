@@ -102,13 +102,7 @@ addSmallBizItemBtn.addEventListener('click', handleAddItemBtnClick = () => {
 })
 
 smallBizBtns.addEventListener('click', handleItemsFilterClick = (e) => {
-  if (e.target.innerText === "all items"){
-    SmallBusinessItem.all.forEach(item => {
-      item.addSmallBizItemToDom()
-    })
-  } else {
     SmallBusinessItem.handleItemsFilterClick(e)
-  }
 })
 
 SmallBusinessItemApi.getSmallBusinessesItems()
