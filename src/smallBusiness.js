@@ -144,15 +144,18 @@ class SmallBusiness {
     static filterSmallBiz(filterOption){
         if (filterOption.target.innerText === "alphabetical"){
             SmallBusiness.alphabetical()
-            debugger
         }
     }
 
     static alphabetical(){
-        SmallBusiness.all.sort(function(a, b){
-            let nameA = nameA.name.toLowerCase();
-            let nameB = nameB.name.toLowerCase();
-            return (nameA < nameB) ? -1 : (nameA > nameB) ? 1: 0
+        SmallBusiness.all.sort(function(nameA, nameB){
+            if (nameA.name.toLowerCase() < nameB.name.toLowerCase()){
+                debugger
+                return -1
+            } else if (nameA.name.toLowerCase() < nameB.name.toLowerCase()){
+                return 1
+            }
+            return 0
         })
     }
 
