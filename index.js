@@ -18,8 +18,6 @@ const bizPriceRangeInput = document.getElementById('new-biz-price-range')
 const bizAddressInput = document.getElementById('new-biz-address')
 
 const filterSmallBiz = document.getElementById('filter-small-biz')
-const allBizFilterBtn = document.getElementById('all-biz')
-const PriceRangeBizFilterBtn = document.getElementById('sort-price-range')
 const priceRangeButtonsContainer = document.getElementById('price-range-buttons')
 const lowPriceRangeList = document.getElementById('low-price-range-biz-list')
 const midPriceRangeList = document.getElementById('mid-price-range-biz-list')
