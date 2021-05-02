@@ -145,6 +145,9 @@ class SmallBusiness {
         debugger
         if (filterOption.target.innerText === "alphabetical"){
             // this.alphabetical(this.all)
+        } else if (filterOption.target.innerText === "price range"){
+            debugger
+            const lowPriceButton = document.createElement('button')
         }
     }
 
