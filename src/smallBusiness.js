@@ -141,4 +141,10 @@ class SmallBusiness {
         bizDropdown.append(option)
     }
 
+    static filterSmallBiz(filterOption){
+        if (filterOption.target.innerText === "alphabetical"){
+            
+        }
+    }
+
 }
