@@ -93,7 +93,11 @@ function handleBizFilterSelect(e){
   SmallBusiness.filterSmallBiz(e.target.lastElementChild)
 }
 
+priceRangeButtonsContainer.addEventListener('click', handlePriceRangeBtnsClick)
 
+function handlePriceRangeBtnsClick(e){
+  SmallBusiness.handlePriceRange(e.target)
+}
 
 addSmallBizItemBtn.addEventListener('click', handleAddItemBtnClick)
 

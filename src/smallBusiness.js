@@ -5,7 +5,7 @@ class SmallBusiness {
     constructor({id, name, price_range, address}){
         this.id = id
         this.name = name
-        this.price_range = price_range
+        this.priceRange = price_range
         this.address = address
 
         this.li = document.createElement("li")
@@ -103,7 +103,7 @@ class SmallBusiness {
 
     updateBiz = (editLi) => {
         this.name = editLi.querySelector('.update-biz-name').value
-        this.price_range = editLi.querySelector('.update-biz-price-range').value
+        this.priceRange = editLi.querySelector('.update-biz-price-range').value
         this.address = editLi.querySelector('.update-biz-address').value
 
         SmallBusinessApi.patchBiz(this)
@@ -143,7 +143,13 @@ class SmallBusiness {
 
     static filterSmallBiz(priceRangeOption){
         if (priceRangeOption.innerText === "price range"){
-            debugger
+            priceRangeButtonsContainer.style.display = "block"
+        }
+    }
+
+    static handlePriceRange(btn){
+        if (btn.innerText === "$"){
+            return SmallBusiness.all.filter(smallBiz => smallBiz.priceRange === "$")
         }
     }
 }
