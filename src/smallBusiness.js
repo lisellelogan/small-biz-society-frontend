@@ -120,7 +120,7 @@ class SmallBusiness {
         this.li.innerHTML = `
         <div data-id="${this.id}">
             <strong class="small-biz-name">${this.name}</strong><br>
-            Price Range: <span class="small-biz-price-range">${this.price_range}</span><br>
+            Price Range: <span class="small-biz-price-range">${this.priceRange}</span><br>
             Address: <span class="small-biz-address">${this.address}</span><br>
         </div>
         <button class="biz-edit" data-id="${this.id}">edit this</button>
@@ -150,7 +150,9 @@ class SmallBusiness {
     static handlePriceRange(btn){
         if (btn.innerText === "$"){
             const lowBizPrice = SmallBusiness.all.filter((smallBiz) => {return smallBiz.priceRange === "$"})
-            
+            lowBizPrice.map(lowBiz => {
+                debugger
+            })
         }
     }
 }
