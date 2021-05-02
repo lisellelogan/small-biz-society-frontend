@@ -143,9 +143,7 @@ class SmallBusiness {
 
     static filterSmallBiz(priceRangeOption){
         if (priceRangeOption.innerText === "price range"){
-            const lowPriceButton = document.createElement('button')
-            lowPriceButton.innerText = "$"
-            priceRangeButtonsContainer.append(lowPriceButton)
+            debugger
         }
     }
 }
