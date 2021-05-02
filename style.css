@@ -75,3 +75,14 @@ button, input {
 #join:hover {
     background-color: #606c38a2;
 }
+
+ul {
+    list-style: none;
+}
+
+#nav-bar { 
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
