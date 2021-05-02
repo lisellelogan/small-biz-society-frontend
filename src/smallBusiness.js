@@ -151,8 +151,28 @@ class SmallBusiness {
         if (btn.innerText === "$"){
             const lowBizPrice = SmallBusiness.all.filter((smallBiz) => {return smallBiz.priceRange === "$"})
             smallBizList.style.display = "none"
+            lowPriceRangeList.style.display = "block"
+            midPriceRangeList.style.display = "none"
             lowBizPrice.map(lowBiz => {
-                smallBizFilterList.append(lowBiz.addBizToLi())
+                lowPriceRangeList.append(lowBiz.addBizToLi())
+            })
+
+        } else if (btn.innerText === "$$"){
+            const midBizPrice = SmallBusiness.all.filter((smallBiz) => {return smallBiz.priceRange === "$$"})
+            smallBizList.style.display = "none"
+            lowPriceRangeList.style.display = "none"
+            midPriceRangeList.style.display = "block"
+            midBizPrice.map(midBiz => {
+                midPriceRangeList.append(midBiz.addBizToLi())
+            })
+        } else if (btn.innerText === "$$$"){
+            const highBizPrice = SmallBusiness.all.filter((smallBiz) => {return smallBiz.priceRange === "$$$"})
+            smallBizList.style.display = "none"
+            lowPriceRangeList.style.display = "none"
+            midPriceRangeList.style.display = "none"
+            highPriceRangeList.style.display = "block"
+            highBizPrice.map(highBiz => {
+                highPriceRangeList.append(highBiz.addBizToLi())
             })
         }
     }
