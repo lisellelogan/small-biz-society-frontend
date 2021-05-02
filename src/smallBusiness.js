@@ -150,8 +150,9 @@ class SmallBusiness {
     static handlePriceRange(btn){
         if (btn.innerText === "$"){
             const lowBizPrice = SmallBusiness.all.filter((smallBiz) => {return smallBiz.priceRange === "$"})
+            smallBizList.style.display = "none"
             lowBizPrice.map(lowBiz => {
-                debugger
+                smallBizFilterList.append(lowBiz.addBizToLi())
             })
         }
     }
