@@ -69,6 +69,7 @@ class SmallBusiness {
         }
         SmallBusinessApi.findOrCreateSmallBiz(bizFormData)
         landingPage.style.display = "none"
+        navBar.style.display = "block"
         homePage.style.display = "block"
     }
 
@@ -161,6 +162,7 @@ class SmallBusiness {
             smallBizList.style.display = "none"
             lowPriceRangeList.style.display = "block"
             midPriceRangeList.style.display = "none"
+            highPriceRangeList.style.display = "none"
             lowBizPrice.map(lowBiz => {
                 lowPriceRangeList.append(lowBiz.addBizToLi())
             })
@@ -170,6 +172,7 @@ class SmallBusiness {
             smallBizList.style.display = "none"
             lowPriceRangeList.style.display = "none"
             midPriceRangeList.style.display = "block"
+            highPriceRangeList.style.display = "none"
             midBizPrice.map(midBiz => {
                 midPriceRangeList.append(midBiz.addBizToLi())
             })
@@ -183,5 +186,12 @@ class SmallBusiness {
                 highPriceRangeList.append(highBiz.addBizToLi())
             })
         } 
+    }
+
+    addBizButtonToItemsList(){
+        const button = document.createElement('button')
+        button.value = this.id
+        button.innerText = this.name
+
     }
 }
