@@ -90,12 +90,13 @@ function handleNavBtnClick(e){
 filterSmallBiz.addEventListener('change', handleBizFilterSelect)
 
 function handleBizFilterSelect(e){
-  SmallBusiness.filterSmallBiz(e.target.lastElementChild)
+  SmallBusiness.filterSmallBiz(e.target)
 }
 
 priceRangeButtonsContainer.addEventListener('click', handlePriceRangeBtnsClick)
 
 function handlePriceRangeBtnsClick(e){
+  if 
   SmallBusiness.handlePriceRange(e.target)
 }
 

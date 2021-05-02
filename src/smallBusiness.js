@@ -142,15 +142,15 @@ class SmallBusiness {
     }
 
     static filterSmallBiz(filterOption){
-        if (filterOption.innerText === "price range"){
+        if (filterOption.lastElementChild.innerText === "price range"){
             priceRangeButtonsContainer.style.display = "block"
-        } else {
-            debugger
-            smallBizList.style.display = "block"
-            lowPriceRangeList.style.display ="none"
-            midPriceRangeList.style.display = "none"
-            highPriceRangeList.style.display = "none"
         }
+        // } else if (filterOption.children.all.innerText === "all"){
+        //     smallBizList.style.display = "block"
+        //     lowPriceRangeList.style.display ="none"
+        //     midPriceRangeList.style.display = "none"
+        //     highPriceRangeList.style.display = "none"
+        // }
     }
 
     static handlePriceRange(btn){
