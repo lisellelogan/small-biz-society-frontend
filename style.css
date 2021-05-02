@@ -20,8 +20,9 @@ h1 {
     font-family: 'Kalam', cursive;
     letter-spacing: 8px;
     font-weight: bolder;
-    margin: 20px 30px;
+    margin: 20% 30px 5px 30px;
     font-size: 40px;
+    text-align: center;
 }
 
 h2, h3, h4, form, p {
@@ -48,6 +49,11 @@ button, input {
     padding: 8px 20px;
     color: #FEFAE0;
 }
+
+#landing-page {
+    text-align: center;
+}
+
 #login-error {
     margin-top: 30px;
     color: #BC6C25;
