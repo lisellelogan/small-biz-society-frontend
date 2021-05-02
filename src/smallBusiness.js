@@ -141,9 +141,15 @@ class SmallBusiness {
         bizDropdown.append(option)
     }
 
-    static filterSmallBiz(priceRangeOption){
-        if (priceRangeOption.innerText === "price range"){
+    static filterSmallBiz(filterOption){
+        if (filterOption.innerText === "price range"){
             priceRangeButtonsContainer.style.display = "block"
+        } else {
+            debugger
+            smallBizList.style.display = "block"
+            lowPriceRangeList.style.display ="none"
+            midPriceRangeList.style.display = "none"
+            highPriceRangeList.style.display = "none"
         }
     }
 
