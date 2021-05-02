@@ -143,19 +143,9 @@ class SmallBusiness {
 
     static filterSmallBiz(filterOption){
         debugger
-        if (filterOption.target.innerText === "alphabetical"){
-            // this.alphabetical(this.all)
-        } else if (filterOption.target.innerText === "price range"){
+        if (filterOption.target.innerText === "price range"){
             debugger
             const lowPriceButton = document.createElement('button')
         }
     }
-
-    // static alphabetical(allBiz){
-    //    allBiz.sort((nameA, nameB) => {
-    //     let bizA = nameA.name.toLowerCase()
-    //     let bizB = nameB.name.toLowerCase()
-    //     return (bizA < bizB) ? -1 : (bizA > bizB) ? 1: 0
-    //     })
-    // }
 }
