@@ -149,7 +149,8 @@ class SmallBusiness {
 
     static handlePriceRange(btn){
         if (btn.innerText === "$"){
-            return SmallBusiness.all.filter(smallBiz => smallBiz.priceRange === "$")
+            const lowBizPrice = SmallBusiness.all.filter((smallBiz) => {return smallBiz.priceRange === "$"})
+            
         }
     }
 }
