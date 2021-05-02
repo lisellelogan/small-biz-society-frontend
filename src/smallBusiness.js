@@ -146,10 +146,12 @@ class SmallBusiness {
         if (filterBtn.innerText === "all"){
             priceRangeButtonsContainer.style.display = "none"
             smallBizList.style.display = "block"
+            SmallBusiness.all.forEach(smallBiz => {
+                smallBiz.addSmallBizToDom()
+            })
 
         } else if (filterBtn.innerText === "price range"){
             priceRangeButtonsContainer.style.display = "block"
-            smallBizList.style.display = "block"
         }
     }
 
