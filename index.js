@@ -16,7 +16,9 @@ const smallBizForm = document.getElementById('small-biz-form')
 const bizNameInput = document.getElementById('new-biz-name')
 const bizPriceRangeInput = document.getElementById('new-biz-price-range')
 const bizAddressInput = document.getElementById('new-biz-address')
+
 const filterSmallBiz = document.getElementById('filter-small-biz')
+const priceRangeButtonsContainer = document.getElementById('price-range-buttons')
 
 const smallBizItemList = document.getElementById('small-biz-item-list')
 const addSmallBizItem = document.getElementById('add-small-biz-item')
@@ -84,7 +86,7 @@ function handleNavBtnClick(e){
 filterSmallBiz.addEventListener('click', handleBizFilterSelect)
 
 function handleBizFilterSelect(e){
-  SmallBusiness.filterSmallBiz(e)
+  SmallBusiness.filterSmallBiz(e.target.lastElementChild)
 }
 
 addSmallBizItemBtn.addEventListener('click', handleAddItemBtnClick)
