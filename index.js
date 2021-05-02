@@ -87,8 +87,8 @@ function handleNavBtnClick(e){
   }
 }
 
-filterSmallBiz.addEventListener('change', handleBizFilterSelect = (e) => {
-  SmallBusiness.handlePriceRangeOptions(e.target.lastElementChild)
+filterSmallBiz.addEventListener('click', handleBizFilterClick = (e) => {
+  SmallBusiness.handleFilerClick(e.target)
 })
 
 
