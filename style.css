@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: #ffe5d9;
+    background-color: #FEFAE0;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
 }
@@ -18,30 +18,35 @@ body {
 
 h1 {
     font-family: 'Kalam', cursive;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
     font-weight: bolder;
     margin: 20px 30px;
+    font-size: 40px;
 }
 
-h2, h3, h4, form {
+h2, h3, h4, form, p {
     margin: 5px 30px;
 }
 
-h2, h3, h4, button, form, input {
+h2, h3, h4, button, form, input, p {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
 }
 
 button {
     background-color: #606c38;
+    border-style: none;
+}
 
+input {
+    border: 2px solid #606c38;
+    border-radius: 2px;
 }
 
 button, input {
     margin: 20px 30px;
     padding: 8px 20px;
-    border-style: none;
-    color: #ffe5d9;
+    color: #FEFAE0;
 }
 
 #login-biz {
@@ -85,4 +90,21 @@ ul {
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 20px; 
+}
+
+#small-biz-item-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    height: auto;
+    width: 300px;
+    align-items: center;
+}
+
+li {
+    padding: 10px 20px;
+    width: 400px;
 }
