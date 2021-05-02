@@ -113,4 +113,21 @@ class SmallBusinessItem {
     addSmallBizItemToDom(){
         smallBizItemList.append(this.addToLi())
     }
+
+    static handleItemsFilterClick(e){
+        let filteredSmallBiz = e.target.value
+        if (filteredSmallBiz){
+            for (const item of SmallBusinessItem.all){
+                if (item.smallBusinessId === parseInt(filteredSmallBiz)){
+                    item.li.style.display = ""
+                } else {
+                    item.li.style.display = "none"
+                }
+            }
+        } else {
+            for (const item of SmallBusinessItem.all){
+                item.li.display = ""
+            }
+        }
+    }
 }
