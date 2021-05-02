@@ -143,7 +143,7 @@ class SmallBusiness {
     }
 
 
-    static handleFilerClick(filterBtn){
+    static handleFilterClick(filterBtn){
         if (filterBtn.innerText === "all"){
             priceRangeButtonsContainer.style.display = "none"
             smallBizList.style.display = "block"
