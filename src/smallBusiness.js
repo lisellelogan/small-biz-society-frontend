@@ -142,16 +142,17 @@ class SmallBusiness {
     }
 
     static filterSmallBiz(filterOption){
+        debugger
         if (filterOption.target.innerText === "alphabetical"){
-            SmallBusiness.alphabetical(SmallBusiness.all)
+            // this.alphabetical(this.all)
         }
     }
 
-    static alphabetical(allBiz){
-        allBiz.sort((nameA, nameB) => {
-            let biz1 = nameA.name.toLowerCase()
-            let biz2 = nameB.name.toLowerCase()
-            return (biz1 < biz2) ? -1 : (biz1 > biz2) ? 1: 0
-        })
-    }
+    // static alphabetical(allBiz){
+    //    allBiz.sort((nameA, nameB) => {
+    //     let bizA = nameA.name.toLowerCase()
+    //     let bizB = nameB.name.toLowerCase()
+    //     return (bizA < bizB) ? -1 : (bizA > bizB) ? 1: 0
+    //     })
+    // }
 }
