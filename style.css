@@ -48,6 +48,11 @@ button, input {
     padding: 8px 20px;
     color: #FEFAE0;
 }
+#login-error {
+    margin-top: 30px;
+    color: #BC6C25;
+    font-weight: bolder;
+}
 
 #login-biz {
     background-color: #606c38;
