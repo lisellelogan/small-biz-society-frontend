@@ -141,16 +141,11 @@ class SmallBusiness {
         bizDropdown.append(option)
     }
 
-    static filterSmallBiz(filterOption){
-        if (filterOption.lastElementChild.innerText === "price range"){
+
+    static handlePriceRangeOptions(filterOption){
+        if (filterOption.innerText === "price range"){
             priceRangeButtonsContainer.style.display = "block"
         }
-        // } else if (filterOption.children.all.innerText === "all"){
-        //     smallBizList.style.display = "block"
-        //     lowPriceRangeList.style.display ="none"
-        //     midPriceRangeList.style.display = "none"
-        //     highPriceRangeList.style.display = "none"
-        // }
     }
 
     static handlePriceRange(btn){
