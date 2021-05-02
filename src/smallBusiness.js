@@ -69,7 +69,7 @@ class SmallBusiness {
         }
         SmallBusinessApi.findOrCreateSmallBiz(bizFormData)
         landingPage.style.display = "none"
-        smallbizsocietyContent.style.display = "block"
+        homePage.style.display = "block"
     }
 
     handleClick = (e) => {
