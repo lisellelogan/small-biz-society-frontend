@@ -124,9 +124,9 @@ class SmallBusinessItem {
                     item.li.style.display = "none"
                 }
             }
-        } else {
+        } else if (e.target.innerText === "all"){
             for (const item of SmallBusinessItem.all){
-                item.li.display = ""
+                item.li.style.display = ""
             }
         }
     }
