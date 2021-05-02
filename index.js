@@ -35,6 +35,8 @@ const bizDropdown = document.getElementById('select-small-biz')
 
 const addSmallBizItemBtn = document.getElementById('add-small-biz-item-button')
 
+const smallBizBtns = document.getElementById('small-biz-buttons')
+
 loginError.style.display = "none"
 navBar.style.display = "none"
 

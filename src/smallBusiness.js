@@ -192,6 +192,6 @@ class SmallBusiness {
         const button = document.createElement('button')
         button.value = this.id
         button.innerText = this.name
-
+        smallBizBtns.append(button)
     }
 }
