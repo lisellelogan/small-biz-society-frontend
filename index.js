@@ -83,7 +83,7 @@ function handleNavBtnClick(e){
   }
 }
 
-filterSmallBiz.addEventListener('click', handleBizFilterSelect)
+filterSmallBiz.addEventListener('change', handleBizFilterSelect)
 
 function handleBizFilterSelect(e){
   SmallBusiness.filterSmallBiz(e.target.lastElementChild)
