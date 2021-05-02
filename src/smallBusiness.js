@@ -141,11 +141,11 @@ class SmallBusiness {
         bizDropdown.append(option)
     }
 
-    static filterSmallBiz(filterOption){
-        debugger
-        if (filterOption.target.innerText === "price range"){
-            debugger
+    static filterSmallBiz(priceRangeOption){
+        if (priceRangeOption.innerText === "price range"){
             const lowPriceButton = document.createElement('button')
+            lowPriceButton.innerText = "$"
+            priceRangeButtonsContainer.append(lowPriceButton)
         }
     }
 }
