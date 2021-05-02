@@ -144,17 +144,12 @@ class SmallBusiness {
 
     static handleFilerClick(filterBtn){
         if (filterBtn.innerText === "all"){
-            chooseBizFilterBtn.style.display = "none"
-            allBizFilterBtn.style.display = "block"
-            PriceRangeBizFilterBtn.style.display = "none"
-
+            priceRangeButtonsContainer.style.display = "none"
             smallBizList.style.display = "block"
-            
+
         } else if (filterBtn.innerText === "price range"){
-            chooseBizFilterBtn.style.display = "none"
-            allBizFilterBtn.style.display = "none"
-            PriceRangeBizFilterBtn.style.display = "block"
             priceRangeButtonsContainer.style.display = "block"
+            smallBizList.style.display = "block"
         }
     }
 
