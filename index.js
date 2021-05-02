@@ -102,7 +102,7 @@ addSmallBizItemBtn.addEventListener('click', handleAddItemBtnClick = () => {
 })
 
 smallBizBtns.addEventListener('click', handleItemsFilterClick = (e) => {
-  SmallBusinessItem.handleItemsDisplay
+  SmallBusinessItem.handleItemsFilterClick(e)
 })
 
 SmallBusinessItemApi.getSmallBusinessesItems()
