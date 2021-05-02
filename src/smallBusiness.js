@@ -143,20 +143,15 @@ class SmallBusiness {
 
     static filterSmallBiz(filterOption){
         if (filterOption.target.innerText === "alphabetical"){
-            SmallBusiness.alphabetical()
+            SmallBusiness.alphabetical(SmallBusiness.all)
         }
     }
 
-    static alphabetical(){
-        SmallBusiness.all.sort(function(nameA, nameB){
-            if (nameA.name.toLowerCase() < nameB.name.toLowerCase()){
-                debugger
-                return -1
-            } else if (nameA.name.toLowerCase() < nameB.name.toLowerCase()){
-                return 1
-            }
-            return 0
+    static alphabetical(allBiz){
+        allBiz.sort((nameA, nameB) => {
+            let biz1 = nameA.name.toLowerCase()
+            let biz2 = nameB.name.toLowerCase()
+            return (biz1 < biz2) ? -1 : (biz1 > biz2) ? 1: 0
         })
     }
-
 }
