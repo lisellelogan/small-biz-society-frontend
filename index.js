@@ -91,18 +91,13 @@ filterSmallBiz.addEventListener('click', handleBizFilterClick = (e) => {
   SmallBusiness.handleFilerClick(e.target)
 })
 
-
-priceRangeButtonsContainer.addEventListener('click', handlePriceRangeBtnsClick)
-
-function handlePriceRangeBtnsClick(e){
+priceRangeButtonsContainer.addEventListener('click', handlePriceRangeBtnsClick = (e) => {
   SmallBusiness.handlePriceRange(e.target)
-}
+})
 
-addSmallBizItemBtn.addEventListener('click', handleAddItemBtnClick)
-
-function handleAddItemBtnClick(){
+addSmallBizItemBtn.addEventListener('click', handleAddItemBtnClick = () => {
   SmallBusinessItem.handleAddItemClick()
-}
+})
 
 SmallBusinessItemApi.getSmallBusinessesItems()
 
