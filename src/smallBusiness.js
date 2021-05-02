@@ -40,6 +40,7 @@ class SmallBusiness {
                 landingPage.style.display = "none"
                 navBar.style.display = "block"
                 homePage.style.display = "block"
+                priceRangeButtonsContainer.style.display = "none"
             } else {
                 loginError.style.display = "block"
             }
@@ -70,6 +71,7 @@ class SmallBusiness {
         SmallBusinessApi.findOrCreateSmallBiz(bizFormData)
         landingPage.style.display = "none"
         homePage.style.display = "block"
+        priceRangeButtonsContainer.style.display = "none"
     }
 
     handleClick = (e) => {
