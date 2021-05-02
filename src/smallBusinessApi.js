@@ -10,6 +10,7 @@ class SmallBusinessApi {
                 const newBiz = new SmallBusiness({id: smallBusiness.id, ...smallBusiness.attributes})
                 newBiz.addSmallBizToDom()
                 newBiz.addBizToDropdown()
+                newBiz.addBizButtonToItemsList()
             });
         })
     }
@@ -32,6 +33,7 @@ class SmallBusinessApi {
             const newBusiness = new SmallBusiness({id: biz.id, ...biz.attributes})
             newBusiness.addSmallBizToDom()
             newBusiness.addBizToDropdown()
+            newBusiness.addBizButtonToItemsList()
         })
     }
 
