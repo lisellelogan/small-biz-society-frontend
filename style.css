@@ -20,7 +20,7 @@ h1 {
     font-family: 'Kalam', cursive;
     letter-spacing: 8px;
     font-weight: bolder;
-    margin: 20% 30px 5px 30px;
+    margin: 7.5% 30px 5px 30px;
     font-size: 40px;
     text-align: center;
 }
@@ -37,11 +37,13 @@ h2, h3, h4, button, form, input, p {
 button {
     background-color: #606c38;
     border-style: none;
+    transition: all .3s;
 }
 
 input {
     border: 2px solid #606c38;
     border-radius: 2px;
+    color: #606c38;
 }
 
 button, input {
@@ -50,7 +52,12 @@ button, input {
     color: #FEFAE0;
 }
 
+button:hover {
+    background-color: #606c38a2;
+}
+
 #landing-page {
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -73,23 +80,43 @@ button, input {
     color: #606c38;
 }
 
-
 #login {
-    background-color: #606c38;
-    transition: all .3s;
-}
-
-#login:hover {
-    background-color: #606c38a2;
+    margin-top: 30px;
 }
 
 #join {
-    background-color: #606c38;  
-    transition: all .3s;
+    margin-top: 30px;
 }
 
-#join:hover {
-    background-color: #606c38a2;
+
+#update-biz-name {
+    color: #606c38;
+}
+
+#new-biz-price-range {
+    color: #606c38;
+}
+
+#new-biz-address {
+    color: #606c38;
+}
+
+.update-biz-name {
+    color: #606c38;
+}
+
+.update-biz-price-range {
+    color: #606c38;
+}
+
+.update-biz-address {
+    color: #606c38;
+}
+
+
+
+#home-page {
+    text-align: center;
 }
 
 ul {
@@ -100,8 +127,9 @@ ul {
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
     margin-top: 20px; 
+    margin-left: 50%;
+    transform: translateX(-50%)
 }
 
 #small-biz-item-list {
@@ -109,10 +137,31 @@ ul {
     flex-wrap: wrap;
 }
 
+#small-biz-form {
+    margin-top: 15px;
+}
+
+#create-biz {
+    background-color: #606c38;
+    transition: all .3s;
+    border-style: none;
+}
+
+#create-biz:hover {
+    background-color: #606c38a2;
+}
+
+#filter-small-biz {
+    margin-left: 30px;
+}
+
 img {
     height: auto;
     width: 300px;
-    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    transition: all .4s;
 }
 
 li {
