@@ -72,6 +72,7 @@ function handleNavBtnClick(e){
   } else if (e.target.innerText === "small biz"){
     hideContent()
     smallBizPage.style.display = "block"
+    priceRangeButtonsContainer.style.display = "none"
   } else if (e.target.innerText === "items"){
     hideContent()
     itemsPage.style.display = "block"
