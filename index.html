@@ -28,11 +28,11 @@
       <div id="add-small-biz">
         <form id="small-biz-form">
           <label for="biz-name">Biz Name: </label><br>
-          <input type="text" name="name" id="new-biz-name"></input><br>
+          <input type="text" name="name" id="new-biz-name" required></input><br>
           <label for="biz-price-range">Price Range: </label><br>
-          <input type="text" name="price_range" id="new-biz-price-range"></input><br>
+          <input type="text" name="price_range" id="new-biz-price-range" required></input><br>
           <label for="biz-address">Address: </label><br>
-          <input type="text" name="address" id="new-biz-address"></input><br>
+          <input type="text" name="address" id="new-biz-address" required></input><br>
           <input id="create-biz" type="submit" value="Add My Biz"></input><br><br>
           already a member?
         </form>
@@ -94,18 +94,18 @@
       <div id="add-small-biz-item">
         <form id="small-biz-item-form">
           <label for="item-name">Item Name: </label><br>
-          <input type="text" name="name" id="new-item-name"></input><br>
+          <input type="text" name="name" id="new-item-name" required></input><br>
           <label for="item-price">Price: </label><br>
-          <input type="float" name="price" id="new-item-price"></input><br>
+          <input type="float" name="price" id="new-item-price" min="0" required></input><br>
           <label for="item-description">Description: </label><br>
-          <input type="text" name="description" id="new-item-description"></input><br>
+          <input type="text" name="description" id="new-item-description" required></input><br>
           <label for="item-type-of-product">Type of Product: </label><br>
-          <input type="text" name="type_of_product" id="new-item-type-of-product"></input><br>
+          <input type="text" name="type_of_product" id="new-item-type-of-product" required></input><br>
           <label for="item-image-url">Image URL: </label><br>
-          <input type="text" name="image_url" id="new-item-image-url"></input><br>
+          <input type="text" name="image_url" id="new-item-image-url" required></input><br>
 
           <label for="select-small-biz">small biz: </label>
-          <select name="small_business_id" id="select-small-biz"></select>
+          <select name="small_business_id" id="select-small-biz" required></select>
 
           <input id="create-item" type="submit" value="Add My Item"></input>
         </form>
