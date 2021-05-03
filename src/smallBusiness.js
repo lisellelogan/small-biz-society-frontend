@@ -71,6 +71,8 @@ class SmallBusiness {
         landingPage.style.display = "none"
         navBar.style.display = "block"
         homePage.style.display = "block"
+
+        smallBizForm.reset()
     }
 
     handleClick = (e) => {
