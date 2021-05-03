@@ -116,7 +116,54 @@ button:hover {
     color: #606c38;
 }
 
+#new-item-name {
+    color: #606c38;
+}
 
+#new-item-price {
+    color: #606c38;
+}
+
+#new-item-description {
+    color: #606c38;
+}
+
+#new-item-type-of-product {
+    color: #606c38;
+}
+
+#new-item-image-url {
+    color: #606c38;
+}
+
+.update-item-name {
+    color: #606c38;
+}
+
+.update-item-price {
+    color: #606c38;
+}
+
+.update-item-description {
+    color: #606c38;
+}
+
+.update-item-type-of-product {
+    color: #606c38;
+}
+
+.update-item-image-url {
+    color: #606c38;
+}
+
+#create-item {
+    background-color: #606c38;
+    transition: all .3s;
+}
+
+#create-item:hover {
+    background-color: #606c38a2;
+}
 
 #home-page {
     text-align: center;
