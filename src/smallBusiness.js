@@ -16,6 +16,7 @@ class SmallBusiness {
         SmallBusiness.all.push(this)
     }
 
+    //pluralize
     smallBizItem(){
         return SmallBusinessItem.all.filter((bizItem) => bizItem.smallBusinessId === parseInt(this.id))
     }
@@ -195,5 +196,7 @@ class SmallBusiness {
         button.value = this.id
         button.innerText = this.name
         smallBizBtns.append(button)
+
+        SmallBusinessItem.addCoffeeTeaBtn()
     }
 }

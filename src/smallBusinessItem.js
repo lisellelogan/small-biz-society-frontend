@@ -130,4 +130,26 @@ class SmallBusinessItem {
             }
         }
     }
+
+    //create btn for coffee&tea 
+    //when clicked only want to display items with that product type
+    static addCoffeeTeaBtn(){
+        const coffeeTeaBtn = document.createElement('button')
+        coffeeTeaBtn.innerText = "Coffee & Tea Items"
+        smallBizBtns.append(coffeeTeaBtn)
+
+        coffeeTeaBtn.addEventListener('click', this.handleCoffeeTeaFilter)
+    }
+
+    static handleCoffeeTeaFilter(){
+        const items = SmallBusinessItem.all.filter(item => item.type_of_product.toLowerCase() === "coffee & tea")
+        const coffeeTeaContainer = document.getElementById('coffee-tea-filter')
+        items.forEach(item => {
+            const li = document.createElement('li')
+            li.innerText = item.name
+
+            coffeeTeaContainer.append(li)
+        })
+    }
 }
+
